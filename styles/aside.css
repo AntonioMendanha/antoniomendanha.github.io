@@ -1,0 +1,51 @@
+ 
+#sidebar {
+    margin-top: 1px;
+    display: block;
+    float: left;
+    background-color: #8fadad;
+    font-weight: bold;
+    font-size: medium;
+
+    width: 200px;
+    height: fit-content;
+    border-radius: 8px;
+}
+#sidebar img{
+    border: none;
+    width: 110px;
+    height: 110px;
+}
+
+#sidebar.logo_blog{
+    width: 120px;
+    height: 120px;
+}
+
+#sidebar div {
+    display: column;
+    justify-content: center;
+    align-items: center;
+}
+#sidebar h1 {
+    color: white;
+    text-align: center;
+    padding: 0px;
+    margin: 10px 15% auto 15%;
+    display: flex;
+}
+
+#sidebar nav ul{
+    padding: 0;
+}
+
+#sidebar nav li button{
+    background-color: var(--menu-color-button);
+    font-weight: bold;
+    padding: 0px;
+    color:white;
+    
+    width: 100%;
+    height: 20px;
+    border-radius: 5px;
+}

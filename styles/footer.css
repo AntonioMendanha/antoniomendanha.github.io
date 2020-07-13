@@ -1,0 +1,8 @@
+footer {
+    clear: both;
+}
+footer p {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 0px;
+}

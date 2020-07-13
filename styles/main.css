@@ -1,0 +1,75 @@
+:root {
+    --primary-color: #103481;
+    --second-color: #fcfcfcd4;
+    --background-color: #8fadad;
+    --front-background-color: #d7dfdf;
+    --menu-color-button: #996600; 
+}
+
+body {
+    background-color:var(--background-color);
+    padding: 0px;
+    margin: 0px;
+}
+img {
+    border: solid 2px;
+    border-color: var(--menu-color-button);
+    display: flex;
+    margin: auto;
+}
+img.logo {
+    border: none;
+    width: 10%;
+    height: 10%;
+}
+section#construcao {
+    margin-top: 5px;
+}
+section img {
+    height: 30%;
+    width: 30%;
+}
+/*div id='box' - caixa principal do site */
+div {
+    background-color: var(--front-background-color);
+    width: 95%;
+    margin: 25px auto 4px auto;
+    border-radius: 4px;
+    box-shadow: 2px 2px 15px black;
+    padding: 2px;
+}
+
+header#newsTitle h1{
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+header#newsTitle h3{
+    margin-top: 0px;
+    font-size: 20px;
+    text-align: center;
+}
+header#newsTitle h6{
+    text-align: right;
+}
+
+section#content {
+    display: block;
+    justify-content: center;
+    margin: 0 15% 0 15%;
+    width: 75vw;
+    color: var(--primary-color);
+}
+
+section#content p {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 100;
+    color: var(--primary-color);
+    margin-left: 10px;
+
+    text-indent: 6px; /* tamanho do inicio do paragrafo*/
+    text-align: justify;
+}
+

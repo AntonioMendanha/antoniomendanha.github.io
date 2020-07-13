@@ -1,0 +1,52 @@
+@media (max-width: 900px) {
+    section#construcao{
+        margin-left: 10%;
+        color: var(--primary-color);
+    }
+    .youtube-grid {
+        grid-template-columns: 1fr;
+        margin: auto;
+        width: 510px;
+        padding: 5px;
+    }
+    .youtube-grid li {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        margin: auto;
+        width: 500px;
+        height: 350px;
+    }
+    .youtube-grid li iframe {
+        width: 480px;
+        height: 320px;
+    }
+    
+}
+@media (min-width: 901px) {
+    section#construcao{
+        color: var(--primary-color);
+        margin-left: 10%;
+    }
+    .youtube-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5px;
+        margin: auto 0 auto 0;
+    }
+    .youtube-grid li {
+        list-style-type: none;
+        margin: 5px 0 5px 5px;
+        display: flex;
+        align-items: center;
+        
+        width: 500px;
+        height: 340px;
+    }
+    .youtube-grid li iframe {
+        border: solid 2px;
+        border-color: var(--menu-color-button);
+        width: 480px;
+        height: 320px;
+    }
+}

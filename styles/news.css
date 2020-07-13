@@ -1,0 +1,19 @@
+section.news {
+    background-color: var(--front-background-color);
+    width: 95%;
+    margin: 25px auto 4px auto;
+    border-radius: 4px;
+    box-shadow: 2px 2px 15px black;
+    padding: 2px;
+}
+section.news img{
+    display: inline-block;
+    margin-left: 0;
+}
+section.news a{
+    align-items: initial;
+
+    color: var(--primary-color);
+    font-size: 20px;
+    text-decoration: none;
+}
