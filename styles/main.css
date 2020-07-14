@@ -39,6 +39,11 @@ div {
     box-shadow: 2px 2px 15px black;
     padding: 2px;
 }
+div .YT_link {
+    width: auto;
+    height: auto;
+    display: inline-block;
+}
 
 header#newsTitle h1{
     font-weight: bold;
