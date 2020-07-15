@@ -1,6 +1,6 @@
 ## :computer: Website - KCafe
 
-<p>Personal website< - PT-br/p>
+<p>Personal website- PT-br</p>
 
 <p align="center">
   <a href="https://www.linkedin.com/in/antoniomendanha/">
