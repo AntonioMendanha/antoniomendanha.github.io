@@ -67,17 +67,28 @@ section#content {
     width: 75vw;
     color: var(--primary-color);
 }
-
 section#content p {
     font-size: 16px;
     line-height: 18px;
     font-weight: 100;
     color: var(--primary-color);
-    margin-left: 10px;
-
+    margin: 2px 5px 0px 10px;
+    padding: 10px;
+    
     text-indent: 6px; /* tamanho do inicio do paragrafo*/
     text-align: justify;
 }
+div#site h1 {
+    text-align: center;
+}
+div#site h3{
+    margin: 2px 5px 2px 20px;
+}
+article {
+    border-bottom: 1px solid;
+    border-color: var(--primary-color);
+}
+
 article h4 ul#lista {
     font-weight: 100;
 }
