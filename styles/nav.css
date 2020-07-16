@@ -1,9 +1,3 @@
-#header-menu {
-    display: block;
-    position: absolute;
-    top: -20px;
-    left: 15%;
-}
 #header-menu h1 {
     display: none;
 }
@@ -12,25 +6,54 @@
     list-style: none;
     text-transform: uppercase;
 }
-/*formatar itens do menu*/
-#header-menu li {
-    display: inline-block;
-    background-color: var(--menu-color-button);
-    padding: 4px;
-    margin: 2px;
-
-    border-radius: 2px;
-    transition: 0.5s;
-}
-#header-menu li:hover {
-    background-color: #0b6277;
-    
-}
 #header-menu a {
     color: var(--second-color);
     text-decoration: none;
     transition: 0.3s;
 }
-#header-menu a:hover {
-    color: white;
+
+@media (max-width: 900px) {
+    #header-menu {
+        display: contents;
+        position: absolute;
+        top: -20px;
+    }
+    /*formatar itens do menu*/
+    #header-menu li {
+        display: inline-block;
+        background-color: var(--menu-color-button);
+        padding: 4px;
+        margin: 2px;
+
+        border-radius: 2px;
+    }
+}
+
+@media (min-width: 901px) {
+    #header-menu {
+        display: block;
+        position: absolute;
+        top: -20px;
+        left: 15%;
+    }
+
+    /*formatar itens do menu*/
+    #header-menu li {
+        display: inline-block;
+        background-color: var(--menu-background-color);
+        padding: 4px;
+        margin: 2px;
+
+        border-radius: 2px;
+        transition: 0.5s;
+    }
+
+    #header-menu li:hover {
+        background-color: var(--menu-color-button);;
+        
+    }
+
+    #header-menu a:hover {
+        color: white;
+    }
 }

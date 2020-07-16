@@ -1,51 +1,113 @@
- 
-#sidebar {
-    margin-top: 1px;
-    display: block;
-    float: left;
-    background-color: #8fadad;
-    font-weight: bold;
-    font-size: medium;
+@media (max-width: 900px) {
+    #aboutus {
+        display: none;
+    }
+    aside {
+        margin-top: 1px;
+        display: block;
+        float: left;
+        background-color: #8fadad;
+        font-weight: bold;
+        font-size: medium;
 
-    width: 200px;
-    height: fit-content;
-    border-radius: 8px;
-}
-#sidebar img{
-    border: none;
-    width: 110px;
-    height: 110px;
+        width: 200px;
+        height: fit-content;
+        border-radius: 8px;
+    }
+
+    aside img{
+        border: none;
+        width: 50px;
+        height: 50px;
+    }
+
+    aside.logo_blog{
+        width: 50px;
+        height: 50px;
+    }
+
+    aside div {
+        display: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    aside h1 {
+        color: white;
+        text-align: center;
+        padding: 0px;
+        margin: 10px 15% auto 15%;
+        display: flex;
+    }
+
+    aside nav ul{
+        padding: 0;
+    }
+
+    aside nav li button{
+        background-color: var(--menu-color-button);
+        font-weight: bold;
+        padding: 0px;
+        color:white;
+        
+        width: 100%;
+        height: 20px;
+        border-radius: 5px;
+    }
 }
 
-#sidebar.logo_blog{
-    width: 120px;
-    height: 120px;
-}
+@media (min-width: 901px) {
+    aside {
+        margin-top: 1px;
+        display: block;
+        float: left;
+        background-color: #8fadad;
+        font-weight: bold;
+        font-size: medium;
 
-#sidebar div {
-    display: column;
-    justify-content: center;
-    align-items: center;
-}
-#sidebar h1 {
-    color: white;
-    text-align: center;
-    padding: 0px;
-    margin: 10px 15% auto 15%;
-    display: flex;
-}
+        width: 200px;
+        height: fit-content;
+        border-radius: 8px;
+    }
 
-#sidebar nav ul{
-    padding: 0;
-}
+    aside img{
+        border: none;
+        width: 100px;
+        height: 100px;
+    }
 
-#sidebar nav li button{
-    background-color: var(--menu-color-button);
-    font-weight: bold;
-    padding: 0px;
-    color:white;
-    
-    width: 100%;
-    height: 20px;
-    border-radius: 5px;
+    aside.logo_blog{
+        width: 100px;
+        height: 100px;
+    }
+
+    aside div {
+        display: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    aside h1 {
+        color: white;
+        text-align: center;
+        padding: 0px;
+        margin: 10px 15% auto 15%;
+        display: flex;
+    }
+
+    aside nav ul{
+        padding: 0;
+    }
+
+    aside nav li button{
+        background-color: var(--menu-color-button);
+        font-weight: bold;
+        padding: 0px;
+        color:white;
+        
+        width: 100%;
+        height: 20px;
+        border-radius: 5px;
+    }
+
 }

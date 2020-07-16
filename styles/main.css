@@ -60,14 +60,14 @@ header#newsTitle h6{
     text-align: right;
 }
 
-section#content {
+section#content , section#aboutus {
     display: block;
     justify-content: center;
     margin: 0 15% 0 15%;
     width: 75vw;
     color: var(--primary-color);
 }
-section#content p {
+section#content p , section#aboutus p{
     font-size: 16px;
     line-height: 18px;
     font-weight: 100;
@@ -78,7 +78,7 @@ section#content p {
     text-indent: 6px; /* tamanho do inicio do paragrafo*/
     text-align: justify;
 }
-div#site h1 {
+div#site h1, div#creator h1{
     text-align: center;
 }
 div#site h3{
