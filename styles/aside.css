@@ -20,12 +20,12 @@
         width: 50px;
         height: 50px;
     }
-
+    
     aside.logo_blog{
         width: 50px;
         height: 50px;
     }
-
+    
     aside div {
         display: column;
         justify-content: center;
@@ -75,12 +75,12 @@
         width: 100px;
         height: 100px;
     }
-
+    
     aside.logo_blog{
         width: 100px;
         height: 100px;
     }
-
+    
     aside div {
         display: column;
         justify-content: center;

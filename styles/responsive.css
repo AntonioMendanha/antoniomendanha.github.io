@@ -8,7 +8,7 @@
         margin: auto;
         width: auto;
     }
-
+       /*Videos YouTube - index*/
     .youtube-grid {
         grid-template-columns: 1fr;
         margin: auto;
@@ -23,7 +23,12 @@
         width: 290px;
         height: 200px;
     }
-    .youtube-grid li iframe {
+    .youtube-grid li iframe  {
+        width: 240px;
+        height: 160px;
+    }
+
+    .youtube-link iframe {
         width: 240px;
         height: 160px;
     }
@@ -58,6 +63,12 @@
         width: 480px;
         height: 320px;
     }
+
+    div.youtube-link iframe {
+        width: 480px;
+        height: 320px;
+    }
+
 }
 
 @media (min-width: 901px) {
@@ -80,7 +91,7 @@
         width: 500px;
         height: 340px;
     }
-    .youtube-grid li iframe {
+    .youtube-grid li iframe, .youtube-link iframe {
         border: solid 2px;
         border-color: var(--menu-color-button);
         width: 480px;

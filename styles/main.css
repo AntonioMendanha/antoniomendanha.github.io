@@ -33,8 +33,8 @@ section img {
 /*div id='box' - caixa principal do site */
 div {
     background-color: var(--front-background-color);
-    width: 95%;
-    margin: 25px auto 4px auto;
+    width: 98%;
+    margin: 5px;
     border-radius: 4px;
     box-shadow: 2px 2px 15px black;
     padding: 2px;
@@ -63,8 +63,7 @@ header#newsTitle h6{
 section#content , section#aboutus {
     display: block;
     justify-content: center;
-    margin: 0 15% 0 15%;
-    width: 75vw;
+    margin: 0 2% 0 2%;
     color: var(--primary-color);
 }
 section#content p , section#aboutus p{

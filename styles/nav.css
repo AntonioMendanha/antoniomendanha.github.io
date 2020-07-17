@@ -1,59 +1,68 @@
-#header-menu h1 {
+#header-menu {
+    position: sticky;/*menu fixo*/
+    align-items: center;
+    display: flex;
+    background-color: var(--background-color);
+    height: 100px;
+    top: 0px;/*menu fixo*/
+}
+
+#header-menu h1 { /*Ocultar H1*/
     display: none;
 }
 /*Formatação do menu*/
 #header-menu ul{
     list-style: none;
     text-transform: uppercase;
+    margin: 1px;
+    padding: inherit;
+}
+/*formatar itens do menu*/
+#header-menu li {
+    display: inline-block;
+    background-color: var(--menu-color-button);
+    padding: 4px;
+    margin: 2px;
+    
+    border-radius: 2px;
+}
+#header-menu li:hover {
+    background-color: var(--menu-color-button);;
 }
 #header-menu a {
     color: var(--second-color);
     text-decoration: none;
     transition: 0.3s;
 }
+#header-menu a:hover {
+    color: white;
+}
+button#logo_home {
+    margin: 0px;
+    padding: 0px;
+    border: none;
 
-@media (max-width: 900px) {
-    #header-menu {
-        display: contents;
-        position: absolute;
-        top: -20px;
-    }
-    /*formatar itens do menu*/
-    #header-menu li {
-        display: inline-block;
-        background-color: var(--menu-color-button);
-        padding: 4px;
-        margin: 2px;
-
-        border-radius: 2px;
-    }
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin: 1px;
+}
+button#logo_home img {
+    width: 100px;
+    height: 100px;
+    background-color: var(--background-color);
+    border: none;
+}
+/*Configurações de Responsividade do menu*/
+@media (max-width: 500px) {
+    #header-menu ul{
+        font-size: 15px;
+    } 
 }
 
 @media (min-width: 901px) {
-    #header-menu {
-        display: block;
-        position: absolute;
-        top: -20px;
-        left: 15%;
-    }
-
     /*formatar itens do menu*/
-    #header-menu li {
-        display: inline-block;
-        background-color: var(--menu-background-color);
-        padding: 4px;
-        margin: 2px;
-
-        border-radius: 2px;
-        transition: 0.5s;
-    }
-
-    #header-menu li:hover {
-        background-color: var(--menu-color-button);;
-        
-    }
-
-    #header-menu a:hover {
-        color: white;
+    #header-menu ul{
+        font-size: 30px;
     }
 }
