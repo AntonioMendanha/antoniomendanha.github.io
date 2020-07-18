@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Blog pessoal de um desenvolvedor descrevendo o aprendizado nas linguagens de programação">
-    <meta name="keywords" conten="Html, html5, css, css3, javascript, js, phyton, aprender">
+    <meta name="keywords" conten="Antonio Mendanha, Kcafe, kcafe, Html, html5, css, css3, javascript, phyton, aprender">
     <link rel="icon" href="/images/icons/logoAzul_600x600.jpg" sizes="32x32">
     <title>Blog - Dev</title>
 
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/nav.css">
     <link rel="stylesheet" href="styles/aside.css">
+    <link rel="stylesheet" href="styles/news.css">
     <link rel="stylesheet" href="styles/footer.css">
 
     <script data-ad-client="ca-pub-2516481700823716" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -31,183 +32,46 @@
     </nav>
 
     <div id="box">
-        <section id="content">
+        <article id="list_article">
+            <header>Diário da evolução (ou quase isso) do meu aprendizado na programação!</header>
+                
+            <section class="news">
+                <img src="./images/blog_print/blog_lista.png" alt="editando o menu - depois">   
+                <a href="./blog_dev/separando_artigos.html">[Blog-Dev] Separando os artigos e dando uma repaginada </a>
+                <h6>Escrito por: Antonio Mendanha -  18/07/2020</h6>
+            </section>
 
-            <article id="inicioDoSite">
-                <header id="newsTitle">
-                    <h1>Início do Site</h1>
-                    <h3>Aprendendo estruturas de HTML5 e CSS3</h3>
-                    <h6>Escrito por: Antonio Mendanha -  10/07/2020</h6>
-                    <figure class="images">
-                        <img src="https://http2.mlstatic.com/pacote-100-templates-html5-css3-prontos-para-uso-D_NQ_NP_862635-MLB26449350132_112017-F.jpg" alt="HTML5 e CSS3">
-                    </figure>   
-                </header>
-                <h4><p>
-                    Comecei a criar e editar esse site no início de junho e <b>ACREDITE</b> e demorei a entender o que realmente eu queria.<br>
-                    Só pra você entender um pouco como os projetos podem mudar, minha idéia inicial era criar um site pra ter uma espécie de currículo online, e decidi que também poderia adicionar
-                    mais conteúdo "linkando" com outras coisas que já produzi e também um local pra adicionar minha opinião sobre assuntos de meu interesse (e seu também né!).</p>
-                    <p>Primeiramente eu dei início a criação do esqueleto que eu queria fazer e a medida que ia editando eu mudei algumas vezes. Como não é minha ocupação principal, esse processo demorou mais ou menos uns 15 dias.
-                        Nesse período eu aproveitei pra estudar um pouco mais sobre as teorias. Se quiser se aprofundar tenho 4 sugestões pra você:</p>
-                    <ul id="lista">
-                        <li><a href="https://www.bing.com/videos/search?q=youtube+curso+em+video&&view=detail&mid=C3434F6B09F03E034B95C3434F6B09F03E034B95&&FORM=VRDGAR" target="_blank">Curso de HTML no Curso em video - YouTube </a></li>
-                        <li><a href="https://www.udemy.com/introducao-a-linguagem-html/" target="_blank">Curso Básico de HTML - Udemy (Diego Mariano) </a></li>
-                        <li><a href="https://www.udemy.com/introducao-a-linguagem-css/" target="_blank">Curso Básico de CSS3 - Udemy (Diego Mariano) </a></li>
-                        <li><a href="https://maujor.com/" target="_blank">Dinossaouro do CSS3 - Majour </a></li>
-                    </ul>
-                    <p>Lembrando que, não adianta você estudar, fazer os exercícios e não praticar. E falo por experiência própria. Por vários momentos quando estava criando algo meu,
-                        me vi preso e confuso. Eu editava e as coisas não ficavam do jeito que eu queria, você quer uma DIV apareça de um jeito e quando você atualiza ela aparece de outro. 
-                        Aí vem aquela pequena sensação de frustração, "Caramba, não aprendi nada e não consigo fazer direito?". Cuidado, essa sensação pode acabar com você.</p>
-                    <p>Nesse primeiro momento ainda estou fazendo tudo na "unha" muita tentativa e erro e já estou vendo que vou precisar mudar algumas estruturas do site.
-                        Estudar o CSS3 (no curso do Diego Mariano) me ajudou a entender mais como deixar as coisas do meu jeito. Quando terminei o curso eu acabei modificando (refatorando)
-                        quase todos os meus arquivos CSS. Eu criei arquivos individuais para as estruturas que se repetiam de forma que precisando mudar algo na estrutura eu consiga fazer
-                        com menos probabilidade de quebrar o site e ter que procurar qual configuração está errada.</p>
-                    <p>Nos próximos artigos vou falar da criação dos conteúdos no site e quais os objetivos das mudanças.</p>
-                </h4>
-            </article>
+            <section class="news">
+                <img src="./images/blog_print/editando_menu2.png" alt="editando o menu - depois">   
+                <a href="./blog_dev/editando_um_menu_fixo_responsivo.html">[Blog-Dev] Menu fixo e responsivo, porque? </a>
+                <h6>Escrito por: Antonio Mendanha -  17/07/2020</h6>
+            </section>
 
-            <article id="gitHubPages">
-                <header id="newsTitle">
-                    <h1>Git Hub Pages</h1>
-                    <h3>Hospedando a página no Git Hub Pages</h3>
-                    <h6>Escrito por: Antonio Mendanha -  13/07/2020</h6>
-                    <figure class="images">
-                        <img src="https://i.ytimg.com/vi/2MsN8gpT6jY/maxresdefault.jpg" alt="Github">
-                    </figure>   
-                </header>
-                <h4><p>
-                    Antes de encarar uma hospedagem paga e uma url personalizada eu optei por verificar a usabilidade do meu site de outra forma, usando o Git Hub Pages. Para quem não
-                    conhece o GitHub, o resumo mais rápido possível é: Uma rede social onde cada programador pode mostrar seus projetos e contribuir com outros que estão na plataforma. Eu considero
-                     como a minha vitrine atual para poder mostrar a minha evolução e o que venho aprendendo.</p>
-                    <p>Para hospedar um site usando o GitHub Pages, você cria um repositório com o ".github.io" e depois subir os arquivos do seu site para o repositório. Lembrando que
-                        você deve seguir as regras de uso do site e também de entender as suas limitações, dentre elas a plataforma só permite páginas estáticas.</p>
-                    <figure class="images">
-                            <img src="/images/github_exemplo.png" alt="criando repositorio">
-                    </figure>   
-                    <p>Bem, acabei de subir o site e encontrei alguns pequenos problemas. O primeiro é mais importante de todos é: <b>Fiz alguma coisa errada!</b>
-                    Não estava conseguindo acessar o site usando o meu link. Fiz algumas pequenas alterações e já consegui acessar. Chegou a hora de compartilhar então o link do meu projeto e
-                    pedir opiniões de pessoas próximas. Antes de compartilhar, já alterei o "title" da página Index.html e atualizei a página Blog Dev. Uma das próximas coisas que terei que implantar
-                    será a adaptação das páginas para o modelo de blog.</p>
-                    <ul id="lista">
-                        <li>Retirar os artigos e criar arquivos separados</li>
-                        <li>Criar uma página principal com os link dos artigos</li>
-                        <li>Na página principal colocar um Iframe com o conteudo do artigo selecionado</li>
-                    </ul>
-                    <p>Parece pouca coisa, mas com certeza para um iniciante vai ser um trabalhinho gostoso de se fazer, enquanto também vou colocando aqui as experiências que estou tendo e 
-                        o que estou aprendendo.
-                    </p>
-                    <p>E pra finalizar o artigo de hoje, deixa eu subir as alterações pra você poder ler no site. Um abraço e até o próximo artigo.</p>
-                </h4>
-            </article>
-            
-            <article id="adsense">
-                <header id="newsTitle">
-                    <h1>ADSENSE - Cadastrando o site no ADSENSE</h1>
-                    <h3>Pro favor seja meu melhor amigo!</h3>
-                    <h6>Escrito por: Antonio Mendanha -  14/07/2020</h6>
-                    <figure class="images">
-                        <img src="https://s2.glbimg.com/YxeD7cHvTDqe8wE-ygGUyB2FfXM=/0x0:1024x562/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2019/t/q/LV8wKEQ5Kuw7sw0cKFgw/google-adsense-2x-1024x562.png" alt="Google Adsense">   
-                    </figure>
-                </header>
-                <h4><p>
-                    Agora que o site está criando corpo, tá na hora de deixar o robozinho do Google fazer a sua mágica. Ter esse site é meu Hobby e ganhar dinheiro com 
-                    isso vai deixar isso melhor ainda. Como já tenho um cananl no YouTube, minha conta do ADSENSE já está cadastrada e preparada mas não custa nada revisar.
-                    Não cheguei a ganhar valores com o YouTube por algumas falhas pessoais, dentre elas a ausência de conteúdo. Sem conteúdo atualizado é praticamente
-                    impossível conseguir mais visualizações, maior quantidade de inscritos e o engajamento desse público. Gostei de fazer os videos e de editar eles
-                    mas o tempo de edição as vezes é muito maior do que se imagina, cheguei a gastar 8 horas editando um video que ficou com pouco mais de 10 minutos depois
-                    de finalizado (o material bruto tinha mais de 1 hora). Então entre a criação de pauta, gravar e editar o video toma muito de um tempo que pra mim é um pouco 
-                    limitado por eu ter uma outra ocupação principal. Até por isso optei por pegar parte do conteúdo que queria colocar no YouTube e disponibilizar aqui
-                    no site.</p>
-                    <p>Voltando ao assunto, após editar o que faltava na minha conta do ADSENSE o script foi liberado e agora chegou a hora de ganhar dinheiro com o Site!</p>
-                    <p><b>Sabe de nada inocente!</b> Primeiro vamos lá, dei uma de Noob e coloquei o script no lugar errado. O pior é que eu percebi que tava colocando no lugar
-                         errado e fiz mesmo assim. Os scripts do HTML até onde aprendi sempre são colocados dentro da tag &lt;head&gt; e eu havia colocado dentro do 
-                         &lt;body&gt;. Logo que percebi o erro, já corrigi e subi as alterações. Pronto! Agora posso ver os anúncios aparecendo no meu site.</p>
-                    <p><b>Sabe de nada inocente!</b> Opa, mais um e vai rolar pedido de música no Fantástico. Escolho qual estilo, Rock, Eletrônica, Pop? <br>
-                        Vamos por partes, quais são os passos até ter anúncios sendo exibidos:</p>
-                        <ul id="lista">
-                            <li>Criar a estrutura do site e deixar com a sua cara</li>
-                            <li>Registrar um Domínio e hospedar o site (como estou usando o GitHub Pages eu meio que pulei esse)</li>
-                            <li><b>Site indexado ao Google</b></li>
-                            <li>Criar conta do Google AdSense</li>
-                            <li>Configurar seu site com o script do Google AdSense</li>
-                            <li>Obs.: Parece que tô adorando colocar listas nos meus artigos não é mesmo?</li>
-                        </ul>
-                    <p>Essa etapa que foi pulada é primordial para a execução dos anúncios e as vezes podem demorar alguns dias. Minha tarefa agora é verificar essas
-                        condições para a indexação do site no Google. Já descobri que posso usar uma própria ferramenta do Google para verificar quais os itens que
-                        precisam ser corrigidos o Google Search Console. Vou subir o arquivo pra confirmar a propriedade e depois estudar um pouco sobre o arquivo 
-                        robots.txt que terei que criar e será usado mais pra frente pelos robôs de busca. Vamos acompanhar juntos quanto tempo vai demorar para começar a 
-                        aparecer os anúncios. Lembrando que pra ganhar dinheiro com anúncios precisarei de visualizações e pra isso terei que estudar um pouco de SEO e fazer
-                        com que o site receba buscas. Ainda não tenho parâmetros de quantos acessos tenho e/ou uma meta de visualizações.</p>
-                    <figure class="images">
-                            <img src="./images/adsense_preparando.png" alt="Adsense preparando">
-                    </figure>   
-                    <p>Antes de mais finalizar deixo um
-                        agradecimento especial pra minha revisora de texto <b>Rita Erotides da Silva</b>. Após eu subir os arquivos ela revisa o texto e faço as correções
-                        sugeridas. Muito obrigado por seu trabalho!<br><b>Rita</b> Sou seu fã!   
-                    </p>
-                </h4>
-            </article>
+            <section class="news">
+                <img src="./images/pesquisa_google.png" alt="busca google">   
+                <a href="./blog_dev/buscas_no_google.html">[Blog-Dev] Robozinho do Google me achou </a>
+                <h6>Escrito por: Antonio Mendanha -  16/07/2020</h6>
+            </section>
 
-            <article id="busca_google">
-                <header id="newsTitle">
-                    <h1>Buscas no Google</h1>
-                    <h3>Robozinho do Google me achou</h3>
-                    <h6>Escrito por: Antonio Mendanha -  16/07/2020</h6>
-                    <figure class="images">
-                        <img src="./images/pesquisa_google.png" alt="busca google">   
-                    </figure>
-                </header>
-                <h4><p>
-                    Como o próprio Google já avisou que o processo podia demorar alguns dias, aproveitei para navegar na página e verificar como estava a experiência do
-                    usuário e vi que para os dispositivos móveis não estava bacana. 
-                    O logo dentro da &lt;aside&gt; estava ocupando parte da &lt;section&gt e a visão do menu também não estava legal. Está no escopo criar o 
-                    menu sandwich, mas nesse primeiro momento foi corrigido a visualização e alterado as cores do menu para desktop, acho que ainda vou alterar novamente
-                    depois porque ainda não sei as cores me agradaram.</p>
-                    <p>Na madrugada anterior a primeira surpresa, <b>Mamãe, estou no Google</b>! As url's já aparecem no google mas com informações ainda um pouco bagunçadas.
-                    Com rápidas pesquisas descobri o "Pulo do Gato" dos buscadores, os Metadados. Os metadados são campos invisíveis para o usuário contendo a descrição
-                    e o conteúdo do site. A utilização desses metadados ajuda no ranqueamento dentro do Google, em contrapartida o abuso e/ou utilização errada
-                     causam efeito contrário prejudicando o ranqueamento. É preciso ser coerente e colocar as informações corretamente para evitar problemas. Também podem ser usadas 
-                    "palavras-chave" mas li que o excesso delas não bem visto por alguns buscadores. Não é a toa que especialistas em SEO (Search Engine Optimization - Otimização
-                    para mecanismos de busca) são importantes para obter sucesso nos buscadores. Fazer o uso coerente e consistente dos metadados é uma das chaves de sucesso.
-                    O conteúdo do site é o mais importante, mas se ninguém conseguir encontrar ele não vai adiantar muita coisa.</p>
-                    <p>Os metadados são incluidos dentro do &lt;head&gt; com a sintaxe <b>&lt;metaname="descrição" content="conteudo da pagina"/&gt</b>.
-                    Agora chegou a hora de começar a fazer a separação dos arquivos do blog, pois como cada artigo tem conteúdos diferentes vou precisar colocar
-                    metadados especificos para cada artigo otimizando os resultados das pesquisas.</p>
-                </h4>
-            </article>
+            <section class="news">
+                <img src="https://s2.glbimg.com/YxeD7cHvTDqe8wE-ygGUyB2FfXM=/0x0:1024x562/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2019/t/q/LV8wKEQ5Kuw7sw0cKFgw/google-adsense-2x-1024x562.png" alt="Google Adsense">   
+                <a href="./blog_dev/criando_conta_adsense.html">[Blog-Dev] AdSense - Seja meu melhor amigo! </a>
+                <h6>Escrito por: Antonio Mendanha -  14/07/2020</h6>
+            </section>
 
-            <article id="Editando_menu ">
-                <header id="newsTitle">
-                    <h1>Menu Fixo e Responsivo</h1>
-                    <h3>Tava feio no mobile</h3>
-                    <h6>Escrito por: Antonio Mendanha -  17/07/2020</h6>
-                    <figure class="images">
-                        <img src="./images/blog_print/editando_menu1.png" alt="editando o menu - antes">   
-                    </figure>
-                </header>
-                <h4><p>
-                    A navegação do site ainda está longe de ser dinâmica, e estou sentindo a necessidade de criar um botão voltar, mas essa inclusão do botão é só 
-                    após organizar a publicação de artigos e inclusão dos metadados em cada página. Navegando pelo mobile detectei 3 coisas para corrigir (e uma refatorada nos
-                    arquivos CSS). A primeira delas é o tópico desse artigo. Melhorar o menu principal.</p>
-                    <p>Optei por fixar o menu porque resolvo o outro problema que é a navegação do site. Com o menu fixo o acesso do usuário as outras partes do site fica mais rápida.
-                        Para fixar o menu atribui <b>position: sticky;</b>. Alterei a posição do logo que estava dentro do &lt;aside&gt; joguei ele dentro do menu e atribui
-                        um <b>float: left;</b> para fixar ele no início do menu. O logo foi incluido como um &lt;button&gt; pois pretendo deixar ele como um botão pra
-                        voltar a Home do site. Dei uma organizada no CSS do menu deixando toda a responsividade do menu no mesmo arquivo. Refatorar o código é importante para facilitar as alterações
-                        futuras do código, inclusive inclui alguns comentários dentro do código pois já estava esquecendo o porque tinha atribuido alguns valores e com os comentários vai facilitar 
-                        a minha vida mais pra frente sempre que quiser alterar algum layout do site. </p>
-                    <p>Apesar de já ter ajustado o menu, a rolagem da página estava me causando desconforto pois as palavras dos artigos estavam sendo misturadas com o menu durante a rolagem.
-                        Então atribui um <b>background-color</b> na cor atual do background do site. Agora o outro desconforto era na visualização dos artigos, havia atribuido margens laterais fixas que
-                        estavam muito grandes principalmente no mobile. O valor estava atribuido com uma porcentagem muito alta e diminui significativamente deixando o site mais bonito.<br>
-                        Já o terceiro problema detectado eu não consegui parar para vericar hoje, são as imagens que estão nos artigos. Inclusive a partir desse artigo vou colocar algumas imagens das 
-                        alterações visuais do site a cada artigo para facilitar a compreensão. As imagens estão muito pequenas e não está dando pra ver o que tem nelas a não ser que faça um zoom na
-                        mesma, então tenho que ver uma melhor forma de fazer isso.</p>
-                    <figure class="images">
-                        <img src="./images/blog_print/editando_menu2.png" alt="editando o menu - depois">   
-                    </figure>
-                    <p>No próximo artigo vou cuidar dessas correções e começar a usar os metadados, na sequência separar os artigos para otimizar os metadados.</p>
-                </h4>
-            </article>
+            <section class="news">
+                <img src="https://i.ytimg.com/vi/2MsN8gpT6jY/maxresdefault.jpg" alt="Github">
+                <a href="./blog_dev/hospedando_site_githubpages.html">[Blog-Dev] Hospedando o site no Git Hub Pages </a>
+                <h6>Escrito por: Antonio Mendanha -  13/07/2020</h6>
+            </section>
 
-        </section>
+            <section class="news">
+                <img src="https://http2.mlstatic.com/pacote-100-templates-html5-css3-prontos-para-uso-D_NQ_NP_862635-MLB26449350132_112017-F.jpg" alt="HTML5 e CSS3">
+                <a href="./blog_dev/iniciando_site.html">[Blog-Dev] Inicio do Site</a>
+                <h6>Escrito por: Antonio Mendanha -  10/07/2020</h6>
+            </section>
+
+        </article>
     </div>
 
     <footer>
