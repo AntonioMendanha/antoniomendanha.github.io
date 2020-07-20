@@ -1,12 +1,22 @@
+/*Seção Sobre nós*/
+section#aboutus {
+    margin: auto;
+    width: auto;
+}
+.youtube-grid li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+.youtube-grid li iframe, .youtube-link iframe {
+    border: solid 2px;
+    border-color: var(--menu-color-button);
+}
+
 @media (max-width: 500px) {
     section#construcao{
-        margin-left: 10%;
+        margin-left: 2%;
         color: var(--primary-color);
-    }
-    /*Seção Sobre nós*/
-    section#aboutus {
-        margin: auto;
-        width: auto;
     }
        /*Videos YouTube - index*/
     .youtube-grid {
@@ -16,19 +26,11 @@
         padding: 5px;
     }
     .youtube-grid li {
-        list-style-type: none;
-        display: flex;
-        align-items: center;
         margin: auto;
         width: 290px;
         height: 200px;
     }
-    .youtube-grid li iframe  {
-        width: 240px;
-        height: 160px;
-    }
-
-    .youtube-link iframe {
+    .youtube-grid li iframe, .youtube-link iframe  {
         width: 240px;
         height: 160px;
     }
@@ -39,36 +41,21 @@
         margin-left: 10%;
         color: var(--primary-color);
     }
-    /*Seção Sobre nós*/
-    section#aboutus {
-        margin: auto;
-        width: auto;
-    }
-
-    .youtube-grid {
+     .youtube-grid {
         grid-template-columns: 1fr;
         margin: auto;
         width: 510px;
         padding: 5px;
     }
     .youtube-grid li {
-        list-style-type: none;
-        display: flex;
-        align-items: center;
         margin: auto;
         width: 500px;
         height: 350px;
     }
-    .youtube-grid li iframe {
+    .youtube-grid li iframe, .youtube-link iframe {
         width: 480px;
         height: 320px;
     }
-
-    div.youtube-link iframe {
-        width: 480px;
-        height: 320px;
-    }
-
 }
 
 @media (min-width: 901px) {
@@ -80,20 +67,16 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 5px;
+        width: 1010px;
         margin: auto 0 auto 0;
     }
     .youtube-grid li {
-        list-style-type: none;
         margin: 5px 0 5px 5px;
-        display: flex;
-        align-items: center;
         
         width: 500px;
         height: 340px;
     }
     .youtube-grid li iframe, .youtube-link iframe {
-        border: solid 2px;
-        border-color: var(--menu-color-button);
         width: 480px;
         height: 320px;
     }
