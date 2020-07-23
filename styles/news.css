@@ -40,6 +40,20 @@ section.news h6 {
     color: var(--primary-color);
     text-align: right;
     margin: auto;
-
-
+}
+div.youtube_news {
+    width: fit-content;
+    height: fit-content;
+}
+@media (max-width: 500px) {
+    iframe#news {
+        width: 250px;
+        height: auto;   
+    }
+}
+@media (min-width: 501px) {
+    iframe#news {
+        width: 560px;
+        height: 315px;
+    }
 }
