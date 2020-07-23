@@ -1,6 +1,5 @@
 header {
     text-align-last: center;
-    color: var(--primary-color);
     font-weight: bold;
     font-size: larger;
     padding: 4px;
@@ -25,7 +24,6 @@ section.news a{
     margin-left: 220px;
     margin-top: 50px;
 
-    color: var(--primary-color);
     font-size: 20px;
     text-decoration: none;
     transition: 0.5ms;
@@ -37,7 +35,6 @@ section.news a:hover{
 
 section.news h6 {
     clear: both;
-    color: var(--primary-color);
     text-align: right;
     margin: auto;
 }
@@ -46,6 +43,14 @@ div.youtube_news {
     height: fit-content;
 }
 @media (max-width: 500px) {
+    section.news img{
+    width: 30%;
+    height: auto;
+    }
+    section.news a{
+        margin-top: 0px;
+        margin-left: 30%;
+    }
     iframe#news {
         width: 250px;
         height: auto;   

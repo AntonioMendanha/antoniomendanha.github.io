@@ -12,13 +12,14 @@ section#aboutus {
     border: solid 2px;
     border-color: var(--menu-color-button);
 }
+section#construcao{
+    margin: 40px;
+    color: var(--primary-color);
+}
 
 @media (max-width: 500px) {
-    section#construcao{
-        margin-left: 2%;
-        color: var(--primary-color);
-    }
-       /*Videos YouTube - index*/
+    /*Videos YouTube - index*/
+
     .youtube-grid {
         grid-template-columns: 1fr;
         margin: auto;
@@ -37,11 +38,8 @@ section#aboutus {
 }
 
 @media (min-width: 501px) {
-    section#construcao{
-        margin-left: 10%;
-        color: var(--primary-color);
-    }
-     .youtube-grid {
+   
+    .youtube-grid {
         grid-template-columns: 1fr;
         margin: auto;
         width: 510px;
@@ -59,11 +57,7 @@ section#aboutus {
 }
 
 @media (min-width: 901px) {
-    section#construcao{
-        color: var(--primary-color);
-        margin-left: 10%;
-    }
-    .youtube-grid {
+        .youtube-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 5px;

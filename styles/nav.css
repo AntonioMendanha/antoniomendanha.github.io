@@ -59,9 +59,7 @@ button#logo_home img {
         font-size: 15px;
     } 
 }
-
 @media (min-width: 901px) {
-    /*formatar itens do menu*/
     #header-menu ul{
         font-size: 30px;
     }

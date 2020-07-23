@@ -6,11 +6,17 @@
     --menu-background-color: rgba(153, 102, 0, 0.5);
     --menu-color-button: #996600;    
 }
-
+* {
+    color: var(--primary-color);
+}
 body {
     background-color:var(--background-color);
     padding: 0px;
     margin: 0px;
+}
+.images img{
+    width: 70vw;
+    height: auto;
 }
 img {
     border: solid 2px;
@@ -26,10 +32,7 @@ img.logo {
 section#construcao {
     margin-top: 5px;
 }
-section img {
-    height: 30%;
-    width: 30%;
-}
+
 /*div id='box' - caixa principal do site */
 div {
     background-color: var(--front-background-color);
@@ -64,13 +67,11 @@ section#content , section#aboutus {
     display: block;
     justify-content: center;
     margin: 0 2% 0 2%;
-    color: var(--primary-color);
 }
 section#content p , section#aboutus p{
     font-size: 16px;
     line-height: 18px;
     font-weight: 100;
-    color: var(--primary-color);
     margin: 2px 5px 0px 10px;
     padding: 10px;
     
@@ -83,17 +84,12 @@ div#site h1, div#creator h1{
 div#site h3{
     margin: 2px 5px 2px 20px;
 }
-article {
-    border-bottom: 1px solid;
-    border-color: var(--primary-color);
-}
 
 article h4 ul#lista {
     font-weight: 100;
 }
 article h4 ul#lista a {
     text-decoration: none;
-    color: var(--primary-color);
     transition: 0.2ms;
 }
 article h4 ul#lista a:hover {
