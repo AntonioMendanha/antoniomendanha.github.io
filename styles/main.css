@@ -6,6 +6,10 @@
     --menu-background-color: rgba(153, 102, 0, 0.5);
     --menu-color-button: #996600;    
 }
+@font-face{
+    font-family: 'Arial', sans-serif;
+    font-display: swap;
+}
 * {
     color: var(--primary-color);
 }
@@ -13,6 +17,16 @@ body {
     background-color:var(--background-color);
     padding: 0px;
     margin: 0px;
+}
+p {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 100;
+    margin: 2px 5px 0px 10px;
+    padding: 5px;
+    
+    text-indent: 6px; /* tamanho do inicio do paragrafo*/
+    text-align: justify;
 }
 .images img{
     width: 70vw;
@@ -68,16 +82,7 @@ section#content , section#aboutus {
     justify-content: center;
     margin: 0 2% 0 2%;
 }
-section#content p , section#aboutus p{
-    font-size: 16px;
-    line-height: 18px;
-    font-weight: 100;
-    margin: 2px 5px 0px 10px;
-    padding: 10px;
-    
-    text-indent: 6px; /* tamanho do inicio do paragrafo*/
-    text-align: justify;
-}
+
 div#site h1, div#creator h1{
     text-align: center;
 }

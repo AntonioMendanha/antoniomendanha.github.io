@@ -1,18 +1,18 @@
-header.blog_dev {
+header.stream {
     padding: 4px;
 }
-header.blog_dev h1{
+header.stream h1{
     font-weight: bold;
     font-size: 40px;
     text-align: center;
     margin-bottom: 0px;
 }
-header.blog_dev h3{
+header.stream h3{
     margin: 0px 0px 4px 0px;
     font-size: 20px;
     text-align: center;
 }
-header.blog_dev h6{
+header.stream h6{
     margin: 0px 0px 10px 0px;
     text-align: right;
 }
@@ -27,4 +27,24 @@ div.youtube_news {
     width: fit-content;
     display: inline-flex;
     position: relative;
+}
+@media (max-width: 500px) {
+    section.news img{
+    width: 30%;
+    height: auto;
+    }
+    section.news a{
+        margin-top: 0px;
+        margin-left: 30%;
+    }
+    iframe#news {
+        width: 250px;
+        height: auto;   
+    }
+}
+@media (min-width: 501px) {
+    iframe#news {
+        width: 560px;
+        height: 315px;
+    }
 }

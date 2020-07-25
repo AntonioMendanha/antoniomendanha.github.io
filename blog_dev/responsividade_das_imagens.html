@@ -8,8 +8,10 @@
     <link rel="icon" href="/images/icons/logoAzul_600x600.jpg" sizes="32x32">
     <title>Resposividade das imagens</title>
 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/main.css">
     <link rel="stylesheet" href="../styles/nav.css">
+    <link rel="stylesheet" href="../styles/blog_dev.css">
     <link rel="stylesheet" href="../styles/footer.css">
 
     <script data-ad-client="ca-pub-2516481700823716" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -30,31 +32,27 @@
     </nav>
 
     <div id="box">
-        <section id="content">
-
-            <article id="responsividadeImagens">
-                <header id="newsTitle">
-                    <h1>Responsividade das imagens</h1>
-                    <h3>Dando uma limpada no CSS</h3>
-                    <h6>Escrito por: Antonio Mendanha -  23/07/2020</h6>
-                    <figure class="images">
-                        <img src="../images/blog_print/responsividade_imagens.png" alt="responsividade imagens">   
-                    </figure>   
-                </header>
-                <p>Já havia notado que a visualização das imagens não estava bacana. O melhor jeito de resolver seria ter um editor de imagens e salvar as imagens já nos tamanhos que vamos trabalhar
-                    assim não precisariam de linhas de código no CSS pra ajustar as imagens. Como esse não é o meu caso (não estou utilizando essa Boa Prática ainda), estava com uma linha no CSS
-                    colocando as imagens com <b>width: 30%; height: 30%;</b> e toda vez que as páginas eram carregadas em telas pequenas como um Iphone SE por exemplo as imagens ficavam muito pequenas.
-                    Substitui a declaração por <b>width: 70vw; height: auto;</b>. <br>Declarar 70vw (70% da viewport width) significa que a imagem vai ocupar 70% do campo de visão da tela. Essa declaração de valor deixou a visualização
-                    das imagens mais bonita, mas algumas imagens se forem muito pequenas podem ficar esticadas e feias com essa configuração. A melhor solução é editar as imagens nos tamanhos corretos como
-                    dito acima.<p>
-                <p>Nos últimos dias também aproveitei para dar uma limpada nos arquivos, a semântica do site estava errada. Somente como uma revisão, as tags &lt;h1&gt; até a &lt;h6&gt;
-                    são utilizadas para Títulos e subtítulos sendo &lt;h1&gt; o principal e conforme vai aumentando o número o sub-título vai ficando menor.<br> O HTML estava com &lt;h4&gt;<b>&lt;p&gt;&lt;/p&gt;</b>&lt;/h4&gt;. Não faz sentido ter um parágrafo dentro de um sub-título, ou é um sub-título ou é parágrafo, então eliminei o excesso de &lt;h4&gt; do código deixando mais limpo. Ainda existe mais
-                    correções desse tipo a se fazer, mas vamos com uma coisa de cada vez. Também dei uma organizada na área café modificando as imagens por imagens gratuitas e modifiquei a seção pra ficar parecida
-                    com a área Blog.
-                </p>
-            </article>
-
-        </section>
+        <article class="blog_dev">
+            <header class="blog_dev">
+                <h1>Responsividade das imagens</h1>
+                <h3>Dando uma limpada no CSS</h3>
+                <h6>Escrito por: Antonio Mendanha -  23/07/2020</h6>
+                <figure class="images">
+                    <img src="../images/blog_print/responsividade_imagens.png" alt="responsividade imagens">   
+                </figure>   
+            </header>
+            <p>Já havia notado que a visualização das imagens não estava bacana. O melhor jeito de resolver seria ter um editor de imagens e salvar as imagens já nos tamanhos que vamos trabalhar
+                assim não precisariam de linhas de código no CSS pra ajustar as imagens. Como esse não é o meu caso (não estou utilizando essa Boa Prática ainda), estava com uma linha no CSS
+                colocando as imagens com <b>width: 30%; height: 30%;</b> e toda vez que as páginas eram carregadas em telas pequenas como um Iphone SE por exemplo as imagens ficavam muito pequenas.
+                Substitui a declaração por <b>width: 70vw; height: auto;</b>. <br>Declarar 70vw (70% da viewport width) significa que a imagem vai ocupar 70% do campo de visão da tela. Essa declaração de valor deixou a visualização
+                das imagens mais bonita, mas algumas imagens se forem muito pequenas podem ficar esticadas e feias com essa configuração. A melhor solução é editar as imagens nos tamanhos corretos como
+                dito acima.</p>
+            <p>Nos últimos dias também aproveitei para dar uma limpada nos arquivos, a semântica do site estava errada. Somente como uma revisão, as tags &lt;h1&gt; até a &lt;h6&gt;
+                são utilizadas para Títulos e subtítulos sendo &lt;h1&gt; o principal e conforme vai aumentando o número o sub-título vai ficando menor.<br> O HTML estava com &lt;h4&gt;
+                <b>&lt;p&gt;&lt;/p&gt;</b>&lt;/h4&gt;. Não faz sentido ter um parágrafo dentro de um sub-título, ou é um sub-título ou é parágrafo, então eliminei o excesso de &lt;h4&gt; do código deixando mais limpo. Ainda existe mais
+                correções desse tipo a se fazer, mas vamos com uma coisa de cada vez. Também dei uma organizada na área café modificando as imagens por imagens gratuitas e modifiquei a seção pra ficar parecida
+                com a área Blog.</p>
+        </article>
     </div>
 
     <footer>

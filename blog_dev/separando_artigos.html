@@ -8,8 +8,10 @@
     <link rel="icon" href="/images/icons/logoAzul_600x600.jpg" sizes="32x32">
     <title>Separando os artigos</title>
 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/main.css">
     <link rel="stylesheet" href="../styles/nav.css">
+    <link rel="stylesheet" href="../styles/blog_dev.css">
     <link rel="stylesheet" href="../styles/footer.css">
 
     <script data-ad-client="ca-pub-2516481700823716" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -30,43 +32,36 @@
     </nav>
 
     <div id="box">
-        <section id="content">
-
-            <article id="separandoArtigos">
-                <header id="newsTitle">
-                    <h1>Separando artigos e dando uma repaginada</h1>
-                    <h3>Separando artigos e otimizando metadados</h3>
-                    <h6>Escrito por: Antonio Mendanha -  18/07/2020</h6>
-                    <figure class="images">
-                        <img src="../images/blog_print/blog_lista.png" alt="Blog lista">
-                    </figure>   
-                </header>
-                <p>
-                    Saiba que se você apaga uma linha errada de um código você pode demorar um tempo até encontrar o erro e corrigi-lo, imagina o que pode acontecer
-                    se o seu código estiver gigante. Separar os artigos seria inevitável então vamos logo fazer isso. As etapas então são:</p>
-                     <ul id="lista">
-                        <li>Criar os arquivos para os artigos individuais</li>
-                        <li>Criar um layout para a página principal da área Blog-Dev com os artigos</li>
-                        <li>Incluir os links para os artigos</li>
-                        <li>Rodar e verificar usabilidade</li>
-                    </ul>
-
-                    <p>A primeira parte até que foi fácil, criar os arquivos individuais para cada artigo foi simples pois foi só copiar o código antigo e apagar
-                    algumas linhas deixando somente um artigo por arquivo. Lá dentro do &lt;Head&gt; mudei os títulos (&lt;title&gt;)de cada artigo. Quando o usuário
-                    abrir mais de uma aba no navegador vai ficar mais fácil ele saber o que estava aberto já que o título agora é o assunto do artigo aberto.
-                    Com relação ao layout da página principal da área Blog-Dev também foi bem simples. Utilizei o esqueleto de um arquivo que eu havia criado antes,
-                    uma caixa com uma imagem e título do artigo, inclui a data de postagem pra ficar com a cara de blog e mostrar as atualizações. Nessa estrutura,
-                    optei por colocar os mais novos sempre no início. Quando o leitor quer procurar se tem alguma atualização ele sempre procura no início da página.</p>
-
-                    <p>Com os artigos criados e a página principal pronta foi a hora de criar os links. Como mudei a estrutura de pastas internas tive que prestar
-                    atenção nos endereços para funcionar direito. Pronto mais uma etapa concluida, e agora fazer uma limpeza nos olhos arrumando a casa com o CSS.
-                    Dei uma primeira organizada nas margens, fixei as imagens no canto esquerdo atribuindo <b>float: left;</b>. Observação: quase esqueci que após 
-                    atribuir <b>float</b> tem que limpar na próxima declaração pra não quebrar a visualização. E agora sim, mais um item riscado do meu checklist.
-                    Ainda tem muita coisa pela frente pra ajustar e mudar, nem cheguei no JavaScript ainda, e quando chegar vai dar um trabalhinho refatorar mas 
-                    também é inevitável. Ainda preciso corrigr a visualização das imagens, mas isso é um próximo assunto.</p>
-            </article>
-
-        </section>
+        <article class="blog_dev">
+            <header class="blog_dev">
+                <h1>Separando artigos e dando uma repaginada</h1>
+                <h3>Separando artigos e otimizando metadados</h3>
+                <h6>Escrito por: Antonio Mendanha -  18/07/2020</h6>
+                <figure class="images">
+                    <img src="../images/blog_print/blog_lista.png" alt="Blog lista">
+                </figure>   
+            </header>
+            <p>Saiba que se você apaga uma linha errada de um código você pode demorar um tempo até encontrar o erro e corrigi-lo, imagina o que pode acontecer
+               se o seu código estiver gigante. Separar os artigos seria inevitável então vamos logo fazer isso. As etapas então são:</p>
+            <ul id="lista">
+                <li>Criar os arquivos para os artigos individuais</li>
+                <li>Criar um layout para a página principal da área Blog-Dev com os artigos</li>
+                <li>Incluir os links para os artigos</li>
+                <li>Rodar e verificar usabilidade</li>
+            </ul>
+            <p>A primeira parte até que foi fácil, criar os arquivos individuais para cada artigo foi simples pois foi só copiar o código antigo e apagar
+                algumas linhas deixando somente um artigo por arquivo. Lá dentro do &lt;Head&gt; mudei os títulos (&lt;title&gt;)de cada artigo. Quando o usuário
+                abrir mais de uma aba no navegador vai ficar mais fácil ele saber o que estava aberto já que o título agora é o assunto do artigo aberto.
+                Com relação ao layout da página principal da área Blog-Dev também foi bem simples. Utilizei o esqueleto de um arquivo que eu havia criado antes,
+                uma caixa com uma imagem e título do artigo, inclui a data de postagem pra ficar com a cara de blog e mostrar as atualizações. Nessa estrutura,
+                optei por colocar os mais novos sempre no início. Quando o leitor quer procurar se tem alguma atualização ele sempre procura no início da página.</p>
+            <p>Com os artigos criados e a página principal pronta foi a hora de criar os links. Como mudei a estrutura de pastas internas tive que prestar
+                atenção nos endereços para funcionar direito. Pronto mais uma etapa concluida, e agora fazer uma limpeza nos olhos arrumando a casa com o CSS.
+                Dei uma primeira organizada nas margens, fixei as imagens no canto esquerdo atribuindo <b>float: left;</b>. Observação: quase esqueci que após 
+                atribuir <b>float</b> tem que limpar na próxima declaração pra não quebrar a visualização. E agora sim, mais um item riscado do meu checklist.
+                Ainda tem muita coisa pela frente pra ajustar e mudar, nem cheguei no JavaScript ainda, e quando chegar vai dar um trabalhinho refatorar mas 
+                também é inevitável. Ainda preciso corrigr a visualização das imagens, mas isso é um próximo assunto.</p>
+        </article>
     </div>
 
     <footer>

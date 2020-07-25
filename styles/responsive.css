@@ -14,12 +14,13 @@ section#aboutus {
 }
 section#construcao{
     margin: 40px;
-    color: var(--primary-color);
 }
 
 @media (max-width: 500px) {
+    section#construcao{
+        margin: 5px;
+    }  
     /*Videos YouTube - index*/
-
     .youtube-grid {
         grid-template-columns: 1fr;
         margin: auto;
@@ -27,8 +28,8 @@ section#construcao{
         padding: 5px;
     }
     .youtube-grid li {
-        margin: auto;
-        width: 290px;
+        width: auto;
+        margin-left: 5%;
         height: 200px;
     }
     .youtube-grid li iframe, .youtube-link iframe  {
@@ -38,7 +39,9 @@ section#construcao{
 }
 
 @media (min-width: 501px) {
-   
+    section#construcao{
+        margin: 5px;
+    }
     .youtube-grid {
         grid-template-columns: 1fr;
         margin: auto;
@@ -62,7 +65,7 @@ section#construcao{
         grid-template-columns: 1fr 1fr;
         gap: 5px;
         width: 1010px;
-        margin: auto 0 auto 0;
+        margin: auto 0 auto 10%;
     }
     .youtube-grid li {
         margin: 5px 0 5px 5px;
