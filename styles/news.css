@@ -5,6 +5,9 @@ header {
     padding: 4px;
 }
 section.news {
+    display: flex;
+    align-items: center;
+
     background-color: var(--front-background-color);
     width: 95%;
     margin: 5px auto 5px auto;
@@ -13,16 +16,16 @@ section.news {
     padding: 2px;
 }
 section.news img{
-    display: block;
-    float: left;
+    /* display: block; */
+    /* float: left; */
     margin: 5px;
     width: 200px;
     height: 100px;
 }
 section.news a{
-    display: flex;
-    margin-left: 220px;
-    margin-top: 50px;
+    /* display: flex; */
+    /* margin-left: 220px; */
+    /* margin-top: 50px; */
 
     font-size: 20px;
     text-decoration: none;
@@ -34,7 +37,7 @@ section.news a:hover{
 }
 
 section.news h6 {
-    clear: both;
+    /* clear: both; */
     text-align: right;
     margin: auto;
 }
