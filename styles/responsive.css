@@ -65,7 +65,7 @@ section#construcao{
         grid-template-columns: 1fr 1fr;
         gap: 5px;
         width: 1010px;
-        margin: auto 0 auto 10%;
+        margin: auto 1 auto 1;
     }
     .youtube-grid li {
         margin: 5px 0 5px 5px;
