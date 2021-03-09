@@ -2,7 +2,7 @@ header {
     text-align-last: center;
     font-weight: bold;
     font-size: larger;
-    padding: 4px;
+    padding: 0.5rem;
 }
 section.news {
     display: flex;
@@ -10,15 +10,15 @@ section.news {
 
     background-color: var(--front-background-color);
     width: 95%;
-    margin: 5px auto 5px auto;
-    border-radius: 4px;
-    box-shadow: 2px 2px 15px black;
-    padding: 2px;
+    margin: 0.5rem auto 0.5rem auto;
+    border-radius: 0.5rem;
+    box-shadow: 0.2rem 0.2rem 1rem black;
+    padding: 0.2rem;
 }
 section.news img{
     /* display: block; */
     /* float: left; */
-    margin: 5px;
+    margin: 0.5rem;
     width: 200px;
     height: 100px;
 }
@@ -27,19 +27,19 @@ section.news a{
     /* margin-left: 220px; */
     /* margin-top: 50px; */
 
-    font-size: 20px;
+    font-size: 1rem;
     text-decoration: none;
     transition: 0.5ms;
 }
 section.news a:hover{
     background-color: var(--menu-background-color);
-    border-radius: 2px;
+    border-radius: 0.2rem;
 }
 
 section.news h6 {
     /* clear: both; */
     text-align: right;
-    margin: auto;
+    margin: auto 0.2rem auto auto;
 }
 @media (max-width: 500px) {
     section.news img{

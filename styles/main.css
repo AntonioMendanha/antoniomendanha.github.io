@@ -19,13 +19,13 @@ body {
     margin: 0px;
 }
 p {
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 18px;
     font-weight: 100;
-    margin: 2px 5px 0px 10px;
-    padding: 5px;
+    margin: 0.2rem 0.2rem 0.2rem 0.5rem;
+    padding: 0.2rem;
     
-    text-indent: 6px; /* tamanho do inicio do paragrafo*/
+    text-indent: 0.2rem; /* tamanho do inicio do paragrafo*/
     text-align: justify;
 }
 .images img{
@@ -33,7 +33,7 @@ p {
     height: auto;
 }
 img {
-    border: solid 2px;
+    border: solid 0.2rem;
     border-color: var(--menu-color-button);
     display: flex;
     margin: auto;
@@ -44,17 +44,17 @@ img.logo {
     height: 10%;
 }
 section#construcao {
-    margin-top: 5px;
+    margin-top: 0.2rem;
 }
 
 /*div id='box' - caixa principal do site */
 div {
     background-color: var(--div-background-color);
-    width: 95%;
-    margin: 5px;
-    border-radius: 4px;
-    box-shadow: 2px 2px 15px black;
-    padding: 2px;
+    width: 98%;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0.2rem 0.2rem 1rem black;
+    padding: 0.2rem;
 }
 
 div .YT_link {
@@ -65,13 +65,13 @@ div .YT_link {
 
 header#newsTitle h1{
     font-weight: bold;
-    font-size: 40px;
+    font-size: 2rem;
     text-align: center;
     margin-bottom: 0px;
 }
 header#newsTitle h3{
     margin-top: 0px;
-    font-size: 20px;
+    font-size: 1rem;
     text-align: center;
 }
 header#newsTitle h6{
@@ -88,7 +88,7 @@ div#site h1, div#creator h1{
     text-align: center;
 }
 div#site h3{
-    margin: 2px 5px 2px 20px;
+    margin: 0.2rem 0.5rem 0.2rem 1rem;
 }
 
 article h4 ul#lista {
@@ -100,5 +100,5 @@ article h4 ul#lista a {
 }
 article h4 ul#lista a:hover {
     background-color: var(--menu-background-color);
-    border-radius: 2px;
+    border-radius: 0.2rem;
 }
