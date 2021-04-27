@@ -15,32 +15,38 @@ section.news {
     box-shadow: 0.2rem 0.2rem 1rem black;
     padding: 0.2rem;
 }
-section.news img{
-    /* display: block; */
-    /* float: left; */
-    margin: 0.5rem;
-    width: 200px;
-    height: 100px;
-}
-section.news a{
-    /* display: flex; */
-    /* margin-left: 220px; */
-    /* margin-top: 50px; */
+/* Botão com os links dos artigos */
+button.news {
+    display: flex;
+    align-items: center;
 
+    background-color: var(--front-background-color);
+    width: 98%;
+    margin: 0.5rem auto 0.5rem auto;
+    border-radius: 0.5rem;
+    border-style: none;
+    box-shadow: 0.2rem 0.2rem 1rem black;
+    padding: 0.2rem;
+    transition: 0.2ms;
+}
+button.news:hover {
+    background-color: var(--menu-background-color);
+    border-radius: 0.5rem;
+}
+button.news img{
+    margin: 0.5rem;
+    width: 8rem;
+    height: 4rem;
+}
+button.news p{
     font-size: 1rem;
-    text-decoration: none;
     transition: 0.5ms;
 }
-section.news a:hover{
-    background-color: var(--menu-background-color);
-    border-radius: 0.2rem;
-}
-
-section.news h6 {
-    /* clear: both; */
+button.news h6 {
     text-align: right;
     margin: auto 0.2rem auto auto;
 }
+
 @media (max-width: 500px) {
     section.news img{
     width: 30%;
@@ -52,3 +58,4 @@ section.news h6 {
     }
   
 }
+
