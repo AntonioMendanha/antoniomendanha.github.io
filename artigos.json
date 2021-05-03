@@ -1,0 +1,102 @@
+{ 
+  "blog_dev": [
+    { "id": "Organizando o feed. - Bem vindo JSON",
+      "url": "./blog_dev/organizando_feed.html",
+      "img_src": "../images/blog_print/json_feed.png",
+      "img_alt": "Organizando_Feed",
+      "criado_por": "Antonio Mendanha",
+      "publicado": "03/05/2021"
+    },
+    { "id": "Move it - Mais um projeto Next Level Week",
+      "url": "./blog_dev/moveit.html",
+      "img_src": "../images/blog_print/fev27_Move-it.png",
+      "img_alt": "Move it",
+      "criado_por": "Antonio Mendanha",
+      "publicado": "27/02/2021"
+    },
+    { "id": "Desafio - 6 meses usando o Google Planilhas",
+      "url": "./blog_dev/desafio_google_planilhas.html",
+      "img_src": "../images/blog_print/jan08_googleSheets.png",
+      "img_alt": "Google Planilhas",
+      "criado_por": "Antonio Mendanha",
+      "publicado": "08/01/2020"
+    },
+    { "id": "Apanhando pro GITHUB e conhecendo o Gatsby",
+      "url": "./blog_dev/github_gatsby.html",
+      "img_src": "../images/blog_print/ago16_proffy.png",
+      "img_alt": "Proffy",
+      "criado_por": "Antonio Mendanha",
+      "publicado": "31/08/2020"
+    },
+    { "id": "NLW #02 - Proffy",
+      "url": "./blog_dev/proffy.html",
+      "img_src": "../images/blog_print/ago16_proffy.png",
+      "img_alt": "Proffy",
+      "criado_por": "Antonio Mendanha",
+      "publicado": "16/08/2020"
+    },
+    { "id": "Projeto Imersão React",
+      "url": "./blog_dev/imersao_react_alura.html",
+      "img_src": "../images/blog_print/ago03_reactflix.png",
+      "img_alt": "Imersão React",
+      "criado_por": "Antonio Mendanha",
+      "publicado": "03/08/2020"
+    },
+    { "id": "Semântica do HTML",
+      "url": "./blog_dev/semantica_html.html",
+      "img_src": "../images/blog_print/jul24_semantica.png",
+      "img_alt": "exibindo codigo html",
+      "criado_por": "Antonio Mendanha",
+      "publicado": "24/07/2020"
+    },
+    { "id": "Responsividade das imagens",
+      "url": "./blog_dev/responsividade_das_imagens",
+      "img_src": "./images/blog_print/responsividade_imagens.png",
+      "img_alt": "responsividade imagens",
+      "criado_por": "Antonio Mendanha",
+      "publicado": "23/07/2020"
+    },
+    { "id": "Separando os artigos e dando uma repaginada",
+      "url": "./blog_dev/separando_artigos.html",
+      "img_src": "./images/blog_print/blog_lista.png",
+      "img_alt": "editando o menu - depois",
+      "criado_por": "Antonio Mendanha",
+      "publicado": "18/07/2020"
+    },
+    { "id": "Menu fixo e responsivo, porque?",
+      "url": "./blog_dev/editando_um_menu_fixo_responsivo.html",
+      "img_src": "./images/blog_print/editando_menu2.png",
+      "img_alt": "editando o menu - depois",
+      "criado_por": "Antonio Mendanha",
+      "publicado": "17/07/2020"
+    },
+    { "id": "Robozinho do Google me achou",
+      "url": "./blog_dev/buscas_no_google.html",
+      "img_src": "./images/pesquisa_google.png",
+      "img_alt": "busca google",
+      "criado_por": "Antonio Mendanha",
+      "publicado": "16/07/2020"
+    },
+    { "id": "AdSense - Seja meu melhor amigo!",
+      "url": "./blog_dev/criando_conta_adsense.html",
+      "img_src": "https://s2.glbimg.com/YxeD7cHvTDqe8wE-ygGUyB2FfXM=/0x0:1024x562/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2019/t/q/LV8wKEQ5Kuw7sw0cKFgw/google-adsense-2x-1024x562.png",
+      "img_alt": "Google Adsense",
+      "criado_por": "Antonio Mendanha",
+      "publicado": "14/07/2020"
+    },
+    { "id": "Hospedando o site no Git Hub Pages",
+      "url": "./blog_dev/hospedando_site_githubpages.html",
+      "img_src": "https://i.ytimg.com/vi/2MsN8gpT6jY/maxresdefault.jpg",
+      "img_alt": "Github",
+      "criado_por": "Antonio Mendanha",
+      "publicado": "13/07/2020"
+    },
+    { "id": "Inicio do Site",
+      "url": "./blog_dev/iniciando_site.html",
+      "img_src": "https://http2.mlstatic.com/pacote-100-templates-html5-css3-prontos-para-uso-D_NQ_NP_862635-MLB26449350132_112017-F.jpg",
+      "img_alt": "HTML5 e CSS3",
+      "criado_por": "Antonio Mendanha",
+      "publicado": "10/07/2020"
+    }
+  ]
+}
