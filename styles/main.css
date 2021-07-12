@@ -8,77 +8,74 @@
 }
 
 * {
-    color: var(--primary-color);
-    font-family: 'Arial', sans-serif;
-    font-display: swap;
+	color: var(--primary-color);
+	font-family: 'Arial', sans-serif;
+	font-display: swap;
 }
 body {
-    background-color:var(--background-color);
-    padding: 0px;
-    margin: 0px;
+	background-color:var(--background-color);
+	padding: 0px;
+	margin: 0px;
 }
 p {
-    font-size: 1rem;
-    line-height: 1.4rem;
-    font-weight: 100;
-    margin: 0.2rem 0.2rem 0.2rem 0.5rem;
-    padding: 0.2rem;
-    
-    text-indent: 0.2rem; /* tamanho do inicio do paragrafo*/
-    text-align: justify;
+	font-size: 1rem;
+	line-height: 1.4rem;
+	font-weight: 100;
+	margin: 0.2rem 0.2rem 0.2rem 0.5rem;
+	padding: 0.2rem;
+	
+	text-indent: 0.2rem; /* tamanho do inicio do paragrafo*/
+	text-align: justify;
 }
 .news img{
-    width: 40rem;
-    height: auto;
+	width: 40rem;
+	height: auto;
 }
 .images img{
-    width: 6rem;
-    height: auto;
+	width: 6rem;
+	height: auto;
 }
 img {
-    border: solid 0.2rem;
-    border-color: var(--menu-color-button);
-    display: flex;
-    margin: auto;
+	border: solid 0.2rem;
+	border-color: var(--menu-color-button);
+	display: flex;
+	margin: auto;
 }
 img.logo {
-    border: none;
-    width: 10%;
-    height: 10%;
-}
-section#construcao {
-    margin-top: 0.2rem;
+	border: none;
+	width: 10%;
+	height: 10%;
 }
 
 /*div id='box' - caixa principal do site */
 div {
-    background-color: var(--div-background-color);
-    width: 98%;
-    margin: 0.5rem;
-    border-radius: 0.5rem;
-    box-shadow: 0.2rem 0.2rem 1rem black;
-    padding: 0.2rem;
+	background-color: var(--div-background-color);
+	width: 98%;
+	margin: 0.5rem;
+	border-radius: 0.5rem;
+	box-shadow: 0.2rem 0.2rem 1rem black;
+	padding: 0.2rem;
 }
 
 div .YT_link {
-    width: auto;
-    height: auto;
-    display: inline-block;
+	width: auto;
+	height: auto;
+	display: inline-block;
 }
 
 header#newsTitle h1{
-    font-weight: bold;
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 0px;
+	font-weight: bold;
+	font-size: 2rem;
+	text-align: center;
+	margin-bottom: 0px;
 }
 header#newsTitle h3{
-    margin-top: 0px;
-    font-size: 1rem;
-    text-align: center;
+	margin-top: 0px;
+	font-size: 1rem;
+	text-align: center;
 }
 header#newsTitle h6{
-    text-align: right;
+	text-align: right;
 }
 
 section#content , section#aboutus {
