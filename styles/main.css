@@ -1,21 +1,21 @@
 :root {
-    --primary-color: #103481;
-    --second-color: #fcfcfcd4;
-    --background-color: #8fadad;
-    --div-background-color: #d7dfdf;
-    --menu-background-color: rgba(153, 102, 0, 0.5);
-    --menu-color-button: #996600;    
+	--primary-color: #103481;
+	--second-color: #fcfcfcd4;
+	--background-color: #8fadad;
+	--div-background-color: #d7dfdf;
+	--menu-background-color: rgba(153, 102, 0, 0.5);
+	--menu-color-button: #996600;    
 }
 
 * {
 	color: var(--primary-color);
 	font-family: 'Arial', sans-serif;
 	font-display: swap;
+	padding: 0px;
+	margin: 0px;
 }
 body {
 	background-color:var(--background-color);
-	padding: 0px;
-	margin: 0px;
 }
 p {
 	font-size: 1rem;
@@ -28,7 +28,7 @@ p {
 	text-align: justify;
 }
 .news img{
-	width: 40rem;
+	width: 50%;
 	height: auto;
 }
 .images img{
@@ -50,7 +50,7 @@ img.logo {
 /*div id='box' - caixa principal do site */
 div {
 	background-color: var(--div-background-color);
-	width: 98%;
+	width: 94%;
 	margin: 0.5rem;
 	border-radius: 0.5rem;
 	box-shadow: 0.2rem 0.2rem 1rem black;
@@ -58,8 +58,9 @@ div {
 }
 
 div .YT_link {
-	width: auto;
+	width: fit-content;
 	height: auto;
+	padding: 2px;
 	display: inline-block;
 }
 
@@ -79,26 +80,28 @@ header#newsTitle h6{
 }
 
 section#content , section#aboutus {
-    display: block;
-    justify-content: center;
-    margin: 0 2% 0 2%;
+	display: block;
+	justify-content: center;
+	margin: 0 2% 0 2%;
 }
-
+div#site, div#creator, div#youtube {
+	width: 88vw;
+}
 div#site h1, div#creator h1{
-    text-align: center;
+	text-align: center;
 }
 div#site h3{
-    margin: 0.2rem 0.5rem 0.2rem 1rem;
+	margin: 0.1rem 0.2rem 0.1rem 1rem;
 }
 
 article h4 ul#lista {
-    font-weight: 100;
+	font-weight: 100;
 }
 article h4 ul#lista a {
-    text-decoration: none;
-    transition: 0.2ms;
+	text-decoration: none;
+	transition: 0.2ms;
 }
 article h4 ul#lista a:hover {
-    background-color: var(--menu-background-color);
-    border-radius: 0.2rem;
+	background-color: var(--menu-background-color);
+	border-radius: 0.2rem;
 }

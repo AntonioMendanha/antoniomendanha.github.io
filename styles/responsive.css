@@ -1,80 +1,85 @@
 /*Seção Sobre nós*/
 section#aboutus {
-    margin: auto;
-    width: auto;
+  margin: auto;
+  width: auto;
 }
 .youtube-grid li {
-    list-style-type: none;
-    display: flex;
-    align-items: center;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
 }
 .youtube-grid li iframe, .youtube-link iframe {
-    border: solid 2px;
-    border-color: var(--menu-color-button);
+  border: solid 2px;
+  border-color: var(--menu-color-button);
 }
-section#construcao{
-    margin: 2.5rem;
-}
-
+/* Visualização em celulares */
 @media (max-width: 500px) {
-    section#construcao{
-        margin: 0.3rem;
-    }  
-    /*Videos YouTube - index*/
-    .youtube-grid {
-        grid-template-columns: 1fr;
-        margin: auto;
-        width: 18.5rem;
-        padding: 0.3rem;
-    }
-    .youtube-grid li {
-        width: auto;
-        margin-left: 5%;
-        height: 12rem;
-    }
-    .youtube-grid li iframe, .youtube-link iframe  {
-        width: 15rem;
-        height: 10rem;
-    }
+  img{
+    width: 40%
+  }
+/*Videos YouTube - index*/
+  .youtube-grid {
+    grid-template-columns: 1fr;
+    margin: auto;
+    width: 80%;
+    background-color: var(--menu-background-color);
+  }
+  .youtube-grid li {
+    width: auto;
+    margin: 2%;
+    height: 8rem;
+  }
+  .youtube-grid li iframe, .youtube-link iframe  {
+    width: 68vw;
+    height: 20vh;
+  }
 }
+/* Visualização em tablets */
+@media (min-width: 501px) { 
+  img{
+    width: 40%;
+  }
+  div.youtube-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+    background-color: var(--menu-color-button);
+    width: 85vw;
+    height: fit-content;
+    margin: auto 1 auto 1;
+  }
 
-@media (min-width: 501px) {
-    section#construcao{
-        margin: 0.3rem;
-    }
-    .youtube-grid {
-        grid-template-columns: 1fr;
-        margin: auto;
-        width: 31rem;
-        padding: 0.3rem;
-    }
-    .youtube-grid li {
-        margin: auto;
-        width: 31.2rem;
-        height: 21.8rem;
-    }
-    .youtube-grid li iframe, .youtube-link iframe {
-        width: 30rem;
-        height: 20rem;
-    }
+  .youtube-grid li {
+    width: 42vw;
+    height: 20vh;
+  }
+  .youtube-grid li iframe, .youtube-link iframe {
+    width: 42vw;
+    height: 20vh;
+  }
 }
 
 @media (min-width: 901px) {
-        .youtube-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 0.3rem;
-        width: 63rem;
-        margin: auto 1 auto 1;
-    }
-    .youtube-grid li {
-        margin: 0.3rem 0 0.3rem 0.3rem;
-        
-        width: 31.2rem;
-        height: 21.8rem;
-    }
-    .youtube-grid li iframe, .youtube-link iframe {
-        width: 30rem;
-        height: 20rem;
-    }
+  img{
+    width: 40%
+  }
+  div.youtube-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    background-color: var(--menu-color-button);
+    width: 85vw;
+    height: fit-content;
+    margin: auto 1 auto 1;
+  }
+  
+  .youtube-grid li {
+    margin: 1px;
+    width: 42vw;
+    height: 40vh;
+  }
+  .youtube-grid li iframe, .youtube-link iframe {
+    width: 40vw;
+    height: 38vh;
+  }
 }

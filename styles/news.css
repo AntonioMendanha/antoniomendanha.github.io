@@ -1,61 +1,73 @@
 header {
-    text-align-last: center;
-    font-weight: bold;
-    font-size: larger;
-    padding: 0.5rem;
+  text-align-last: center;
+  font-weight: bold;
+  font-size: larger;
+  padding: 0.5rem;
 }
 section.news {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 
-    background-color: var(--front-background-color);
-    width: 95%;
-    margin: 0.5rem auto 0.5rem auto;
-    border-radius: 0.5rem;
-    box-shadow: 0.2rem 0.2rem 1rem black;
-    padding: 0.2rem;
+  background-color: var(--front-background-color);
+  width: 95%;
+  margin: 0.5rem auto 0.5rem auto;
+  border-radius: 0.5rem;
+  box-shadow: 0.2rem 0.2rem 1rem black;
+  padding: 0.2rem;
 }
 /* Botão com os links dos artigos */
 button.news {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 
-    background-color: var(--front-background-color);
-    width: 98%;
-    margin: 0.5rem auto 0.5rem auto;
-    border-radius: 0.5rem;
-    border-style: none;
-    box-shadow: 0.2rem 0.2rem 1rem black;
-    padding: 0.2rem;
-    transition: 0.2ms;
+  background-color: var(--front-background-color);
+  width: 98%;
+  margin: 0.5rem auto 0.5rem auto;
+  border-radius: 0.5rem;
+  border-style: none;
+  box-shadow: 0.2rem 0.2rem 1rem black;
+  padding: 0.2rem;
+  transition: 0.2ms;
 }
 button.news:hover {
-    background-color: var(--menu-background-color);
-    border-radius: 0.5rem;
+  background-color: var(--menu-background-color);
+  border-radius: 0.5rem;
 }
 button.news img{
-    margin: 0.5rem;
-    width: 8rem;
-    height: 4rem;
+  margin: 0.5rem;
+  width: 8rem;
+  height: 4rem;
 }
 button.news p{
-    font-size: 1rem;
-    transition: 0.5ms;
+  font-size: 1rem;
+  transition: 0.5ms;
 }
 button.news h6 {
-    text-align: right;
-    margin: auto 0.2rem auto auto;
+  text-align: right;
+  margin: auto 0.2rem auto auto;
 }
 
 @media (max-width: 500px) {
-    section.news img{
+  button.news img{
+    margin: 0px;
+    width: 25vw;
+    height: auto;
+  }
+  button.news p{
+    margin: 0px;
+    text-align: center;
+    font-size: 10px;
+  }
+  button.news h6 {
+    text-align: right;
+    margin-top: 30px;
+  }
+  section.news img{
     width: 30%;
     height: auto;
-    }
-    section.news a{
-        margin-top: 0px;
-        margin-left: 30%;
-    }
-  
+  }
+  section.news a{
+    margin-top: 0px;
+    margin-left: 30%;
+  }
 }
-
