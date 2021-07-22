@@ -1,7 +1,13 @@
 // Fetch pegando o JSON e colocando no console
-fetch('/artigos.json')
+//var lista = document.getElementById('menu-lista');
+
+fetch('../artigos.json')
   .then(response => {
-    return response.json();
-  })
-  .then(respostaRetornada => console.log(respostaRetornada))
+    return response.blob();
+    }
+  )
+  .then(response => { 
+    console.log(response)
+  }
+  )
 

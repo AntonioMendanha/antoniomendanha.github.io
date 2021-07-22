@@ -20,10 +20,10 @@
 </head>
 
 <body>
-	<nav id="header-menu">
+	<nav class="header-menu" id="header-menu">
 		<h1>Menu principal</h1>
 		<button id="logo_home"><img src="./images/logo_600x600.png" alt="logotipo Kcafe"></button>
-		<ul type="none">
+		<ul type="none" class="header-menu" id="menu-lista">
 			<li><a href="./index.html">Home</a></li>
 			<li><a href="./cafe.html">Café</a></li>
 			<li><a href="./blog_dev.html">Blog-Dev</a></li>
@@ -35,15 +35,36 @@
 	<div class='blog_dev' id="box">
 		<article class='blog_dev' id="list_article">
 			<header class='blog_dev'>Diário da evolução (ou quase isso) do meu aprendizado na programação!</header>
-				<button
-					class="news"
-					type="button"
-					onclick='window.location.href="./blog_dev/organizando_feed.html"'
-				>
-					<img src="../images/blog_print/json_feed.png" alt="Imagem Json">   
-					<p>Organizando o feed. - Bem vindo JSON</p>
-					<h6>Escrito por: Antonio Mendanha - 03/05/2021</h6>
-				</button>    
+
+			<button
+				class="news"
+				type="button"
+				onclick='window.location.href="./blog_dev/santanderBolsas.html"'
+			>
+				<img src="../images/blog_print/ago22-santander.png" alt="Bolsa Santander">   
+				<p>Bolsas de estudo Santander - Web FullStack React</p>
+				<h6>Escrito por: Antonio Mendanha - 22/07/2021</h6>
+			</button> 
+
+			<button
+				class="news"
+				type="button"
+				onclick='window.location.href="./blog_dev/aprendendoJavascript.html"'
+			>
+				<img src="./images/blog_print/ago20_javascript.png" alt="Javascript image">   
+				<p>Aprendendo Javascript - A tríade da Web.</p>
+				<h6>Escrito por: Antonio Mendanha - 20/07/2021</h6>
+			</button> 
+
+			<button
+				class="news"
+				type="button"
+				onclick='window.location.href="./blog_dev/organizando_feed.html"'
+			>
+				<img src="../images/blog_print/json_feed.png" alt="Imagem Json">   
+				<p>Organizando o feed. - Bem vindo JSON</p>
+				<h6>Escrito por: Antonio Mendanha - 03/05/2021</h6>
+			</button>    
 						
 				<button
 					class="news"
