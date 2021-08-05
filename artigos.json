@@ -1,5 +1,12 @@
 { 
   "blog_dev": [
+    { "id": "Fontes de estudo - Curso em Video - Olá pequeno gafanhoto!",
+      "url": "./blog_dev/javascriptCursoEmVideo.html",
+      "img_src": "../images/blog_print/ago05_cursoemvideo.png",
+      "img_alt": "Curso em Video image",
+      "criado_por": "Antonio Mendanha",
+      "publicado": "05/08/2021"
+    },
     { "id": "Bolsas de estudo Santander - Web FullStack React",
       "url": "./blog_dev/santanderBolsas.html",
       "img_src": "../images/blog_print/ago22-santander.png",
@@ -8,7 +15,7 @@
       "publicado": "22/07/2021"
     },
     { "id": "Aprendendo Javascript",
-      "url": "./blog_dev/aprendendoJavascript.html",
+      "url": "./blog_dev/aprendendoJavascriptNaPratica.html",
       "img_src": "../images/blog_print/ago20_javascript.png",
       "img_alt": "Javascript image",
       "criado_por": "Antonio Mendanha",
