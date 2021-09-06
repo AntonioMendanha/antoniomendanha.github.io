@@ -1,18 +1,18 @@
-header.blog_dev {
+section.blog_dev {
   padding: 4px;
 }
-header.blog_dev h1{
+section.blog_dev h1{
   font-weight: bold;
   font-size: 40px;
   text-align: center;
   margin-bottom: 0px;
 }
-header.blog_dev h3{
+section.blog_dev h3{
   margin: 0px 0px 4px 0px;
   font-size: 20px;
   text-align: center;
 }
-header.blog_dev h6{
+section.blog_dev h6{
   margin: 0px 0px 10px 0px;
   text-align: right;
 }

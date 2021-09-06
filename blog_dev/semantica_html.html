@@ -18,61 +18,73 @@
 </head>
 
 <body>
+  <header>
     <nav id="header-menu">
-        <h1>Menu principal</h1>
-        <button id="logo_home"><img src="../images/logo_600x600.png" alt="logotipo Kcafe"></button>
-        <ul type="none">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../cafe.html">Café</a></li>
-            <li><a href="../blog_dev.html">Blog-Dev</a></li>
-            <li><a href="../stream.html">Filmes e Séries</a></li>
-            <li><a href="../aboutus.html">Sobre nós</a></li>
-        </ul>
+      <h1>Menu principal</h1>
+      <button id="logo_home"><img src="../images/logo_600x600.png" alt="logotipo Kcafe"></button>
+      <ul type="none">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../cafe.html">Café</a></li>
+        <li><a href="../blog_dev.html">Blog-Dev</a></li>
+        <li><a href="../stream.html">Filmes e Séries</a></li>
+        <li><a href="../aboutus.html">Sobre nós</a></li>
+      </ul>
     </nav>
+  </header>
 
+  <main>
     <div id="box">
-        <article class="blog_dev">
-            <header class="blog_dev">
-                <h1>Semântica no código HTML</h1>
-                <h3>Organizando e melhorando velocidade de leitura do site</h3>
-                <h6>Escrito por: Antonio Mendanha -  24/07/2020</h6>
-                <figure class="news">
-                    <img src="../images/blog_print/jul24_semantica.png" alt="exibindo codigo html">   
-                </figure>   
-            </header>
-            <p>Diariamente eu entro em 2 ferramentas do google para verificar como está o site. O Google Ads pra saber se já pode ser monetizado e o Google Search Console
-                pra verficar sobre visualizações e velocidade do site. Percebi que tem bastante coisa pra se fazer para aumentar a velocidade, lógico que preciso estudar um pouco,
-                mas tem uma coisa que iniciei no último artigo e notei que da pra brincar um pouco ainda.<br>
-                No artigo anterior falei sobre o &lt;h4&gt; e o &lt;p&gt; e tem outros campos que também tem o mesmo problema. Pelo que eu estou entendendo é um problema de querer detalhar demais 
-                algo que pode ser mais simplificado, erro de aprendizado que faz parte do processo.
-                Inclusive talvez eu nem tenha um ganho significativo de velocidade, mas todo byte eliminado pode resultar em economia futura de servidor  (Observação: tenho que trabalhar as imagens).</p>
-            <p>Logo no início do desenho do site eu criei uma seção de menu lateral &lt;aside&gt; e editei um arquivo CSS para ela. Estava chamando esse arquivo em todas as páginas
-                e não estou efetivamente usando a seção em nenhuma delas, só tem uma página que tem uma seção aside e ainda nem está configurada do melhor jeito. Eliminei o 
-                carregamento desse arquivo CSS de todas as páginas e nas páginas de artigos eu também eliminei uma tag que estava solta. Deixei bem simplificado.</p>
-                <div class="box_code">
-                    &lt;div&gt;<br>
-                      &nbsp; &nbsp; &lt;article&gt;<br>
-                          &nbsp; &nbsp; &nbsp; &nbsp; &lt;header&gt;<br>
-                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; dados de cabeçalho<br>
-                          &nbsp; &nbsp; &nbsp; &nbsp; &lt;/header&gt;<br>
-                          &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt; texto  &lt;/p&gt;<br>
-                      &nbsp; &nbsp; &lt;/article&gt;<br>
-                    &lt;/div&gt;
-                </div>
-            <p>Criei essa Div pra a partir desse artigo exibir códigos dessa forma.
-                Escrever esse código por enquanto está um pouco ruim, mas conforme eu evoluir vou melhorar a apresentação desses códigos. No commit de amanhã vou corrigir os
-                artigos anteriores pra essa nova configuração e depois corrigir o CSS. 
-            </p>
-        </article>
-    </div>
-
-    <footer>
-        <p class="rodape"> Copyright&copy; 2020 - by Antonio Mendanha<br>
-            <a href="https://www.linkedin.com/in/antoniomendanha/" target="blank"> Linkedin </a> /
-            <a href="https://github.com/AntonioMendanha" target="blank"> GitHub </a> /
-            <a href="https://www.youtube.com/c/KCafebr" target="blank"> Youtube </a> /
-            <a href="https://twitter.com/antoniomendanha" target="blank"> Twitter</a>
+      <article class="blog_dev">
+        <section class="blog_dev">
+          <h1>Semântica no código HTML</h1>
+          <h3>Organizando e melhorando velocidade de leitura do site</h3>
+          <h6>Escrito por: Antonio Mendanha -  24/07/2020</h6>
+          <figure class="news">
+              <img src="../images/blog_print/jul24_semantica.png" alt="exibindo codigo html">   
+          </figure>   
+        </section>
+        <p>Diariamente eu entro em 2 ferramentas do google para verificar como está o site. O Google Ads pra saber se já pode ser monetizado e o Google Search Console
+          pra verficar sobre visualizações e velocidade do site. Percebi que tem bastante coisa pra se fazer para aumentar a velocidade, lógico que preciso estudar um pouco,
+        mas tem uma coisa que iniciei no último artigo e notei que da pra brincar um pouco ainda.<br>
+          No artigo anterior falei sobre o &lt;h4&gt; e o &lt;p&gt; e tem outros campos que também tem o mesmo problema. Pelo que eu estou entendendo é um problema de querer detalhar demais 
+          algo que pode ser mais simplificado, erro de aprendizado que faz parte do processo.
+          Inclusive talvez eu nem tenha um ganho significativo de velocidade, mas todo byte eliminado pode resultar em economia futura de servidor  (Observação: tenho que trabalhar as imagens).</p>
+        <p>Logo no início do desenho do site eu criei uma seção de menu lateral &lt;aside&gt; e editei um arquivo CSS para ela. Estava chamando esse arquivo em todas as páginas
+          e não estou efetivamente usando a seção em nenhuma delas, só tem uma página que tem uma seção aside e ainda nem está configurada do melhor jeito. Eliminei o 
+          carregamento desse arquivo CSS de todas as páginas e nas páginas de artigos eu também eliminei uma tag que estava solta. Deixei bem simplificado.</p>
+        <div class="box_code">
+                &lt;div&gt;<br>
+                  &nbsp; &nbsp; &lt;article&gt;<br>
+                      &nbsp; &nbsp; &nbsp; &nbsp; &lt;header&gt;<br>
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; dados de cabeçalho<br>
+                      &nbsp; &nbsp; &nbsp; &nbsp; &lt;/header&gt;<br>
+                      &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt; texto  &lt;/p&gt;<br>
+                  &nbsp; &nbsp; &lt;/article&gt;<br>
+                &lt;/div&gt;
+        </div>
+        <p>Criei essa Div pra a partir desse artigo exibir códigos dessa forma.
+          Escrever esse código por enquanto está um pouco ruim, mas conforme eu evoluir vou melhorar a apresentação desses códigos. No commit de amanhã vou corrigir os
+          artigos anteriores pra essa nova configuração e depois corrigir o CSS. 
         </p>
-    </footer>
+      </article>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p class="rodape"> Copyright&copy; 2020 - by Antonio Mendanha<br>
+      <a href="https://www.linkedin.com/in/antoniomendanha/" target="blank">
+        <img class="badge" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="Linkedin_badge" target="blank">
+      </a> 
+      <a href="https://github.com/AntonioMendanha" target="blank">
+        <img class="badge" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="Github_badge" target="blank">
+      </a>
+      <a href="https://www.youtube.com/c/KCafebr" target="blank">
+        <img class="badge" src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="Youtube_badge" target="blank">
+      </a> 
+      <a href="https://twitter.com/antoniomendanha" target="blank">
+        <img class="badge" src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter_badge" target="blank">
+      </a>
+    </p>
+  </footer>
 </body>
 </html>

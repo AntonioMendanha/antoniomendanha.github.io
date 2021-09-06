@@ -1,18 +1,18 @@
-header.stream {
+div.stream {
   padding: 4px;
 }
-header.stream h1{
+div.stream h1{
   font-weight: bold;
   font-size: 40px;
   text-align: center;
   margin-bottom: 0px;
 }
-header.stream h3{
+div.stream h3{
   margin: 0px 0px 4px 0px;
   font-size: 20px;
   text-align: center;
 }
-header.stream h6{
+div.stream h6{
   margin: 0px 0px 10px 0px;
   text-align: right;
 }

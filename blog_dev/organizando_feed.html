@@ -18,51 +18,62 @@
 </head>
 
 <body>
+  <header>
     <nav id="header-menu">
-        <h1>Menu principal</h1>
-        <button id="logo_home"><img src="../images/logo_600x600.png" alt="logotipo Kcafe"></button>
-        <ul type="none">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../cafe.html">Café</a></li>
-            <li><a href="../blog_dev.html">Blog-Dev</a></li>
-            <li><a href="../stream.html">Filmes e Séries</a></li>
-            <li><a href="../aboutus.html">Sobre nós</a></li>
-        </ul>
+      <h1>Menu principal</h1>
+      <button id="logo_home"><img src="../images/logo_600x600.png" alt="logotipo Kcafe"></button>
+      <ul type="none">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../cafe.html">Café</a></li>
+        <li><a href="../blog_dev.html">Blog-Dev</a></li>
+        <li><a href="../stream.html">Filmes e Séries</a></li>
+        <li><a href="../aboutus.html">Sobre nós</a></li>
+      </ul>
     </nav>
+  </header>
 
-    <div id="box">
-        <article class="blog_dev">
-            <header class="blog_dev">
-                <h1>Organizando o feed.</h1>
-                <h3>Bem vindo JSON</h3>
-                <h6>Escrito por: Antonio Mendanha -  03/05/2021</h6>
-                <figure class="news">   
-                    <img src="../images/blog_print/json_feed.png" alt="Organizando_Feed">   
-                </figure>
-            </header>
-                <p>
-                    Nas últimas semanas participei de alguns treinamentos online (NLW - Rocketseat e Imersão-Alura), esses treinamentos não apresentam muito o que eu estou fazendo com esse blog, mas a cada aula vendo as organizações de códigos e a refatoração vem a necessidade de organizar um pouco melhor o meu código. </p>
-                <p>A sequência dos itens que preciso refatorar nesta primeira etapa estão claras para mim. 
-                    <ul>
-                        <li>Começar a usar o Javascritp</li>
-                        <li>Criar JSON com os dados dos posts</li>
-                        <li>Modificar estrutura da página principal do Blog-Dev com uma estrutura de laço e usar o JSON</li>
-                        <li>Usar o conceito de componentes para o Menu e o Footer</li>
-                    </ul>
-                </p>
-                <p>Sei que vocês sabem, mas vamos do início. JSON - JavaScript Object Notation - um Anotação em formato de Objeto JavaScript. Como em um arquivo de excel que geralmente tabula os dados utilizando um arquivo CSV, o JSON pode ser usado da mesma forma. No meu exemplo, tenho uma estrutura para a criação dos post que é de repetição: Nome do post, data, criador, imagem, etc. Organizando o arquivo com essas anotações eu posso chamar o objeto no html da página Blog-Dev utilizando a estrutura de repetição. Assim o código fica mais limpo e escalável. Depois de implantar esse JSON e a função chamando uma estrutura de laço mapeando o JSON, não vou precisar mais mexer nessa estrutura a cada novo post. A única coisa que terei que fazer é depois de criar o html do novo post eu tenho que adicionar as informações do novo post no JSON, e a página será atualizada automaticamente, com a função sendo rodada.</p>
-                <p>Com o pouco conhecimento que já adquiri de estrutura de banco de dados, foi fácil montar a estrutura do JSON. Deixando bem limpo e fácil. Nas práticas que tenho visto, geralmente após a abertura das chaves todo mundo pula para a próxima linha e eu preferi manter o id junta da abertura do objeto para facilitar minha busca quando eu minimizar conforme a imagem que coloquei no topo do post.</p>
-                <p>Como o JSON já foi criado, agora estou na parte de criar o primeiro script chamando uma função para apresentar os resultados do JSON na página principal. Nessa mudança, a função deve incluir em torno de 6 linhas de código que irão eliminar em torno de 130 linhas que hoje tem no meu html apenas pra dificultar a manutenção do código. </p>
-        </article>
-    </div>
-
-    <footer>
-        <p class="rodape"> Copyright&copy; 2020 - by Antonio Mendanha<br>
-            <a href="https://www.linkedin.com/in/antoniomendanha/" target="blank"> Linkedin </a> /
-            <a href="https://github.com/AntonioMendanha" target="blank"> GitHub </a> /
-            <a href="https://www.youtube.com/c/KCafebr" target="blank"> Youtube </a> /
-            <a href="https://twitter.com/antoniomendanha" target="blank"> Twitter</a>
+<main>
+  <div id="box">
+    <article class="blog_dev">
+      <section class="blog_dev">
+        <h1>Organizando o feed.</h1>
+        <h3>Bem vindo JSON</h3>
+        <h6>Escrito por: Antonio Mendanha -  03/05/2021</h6>
+        <figure class="news">   
+          <img src="../images/blog_print/json_feed.png" alt="Organizando_Feed">   
+        </figure>
+      </section>
+        <p>Nas últimas semanas participei de alguns treinamentos online (NLW - Rocketseat e Imersão-Alura), esses treinamentos não apresentam muito o que eu estou fazendo com esse blog, mas a cada aula vendo as organizações de códigos e a refatoração vem a necessidade de organizar um pouco melhor o meu código. </p>
+        <p>A sequência dos itens que preciso refatorar nesta primeira etapa estão claras para mim. 
+          <ul>
+            <li>Começar a usar o Javascritp</li>
+            <li>Criar JSON com os dados dos posts</li>
+            <li>Modificar estrutura da página principal do Blog-Dev com uma estrutura de laço e usar o JSON</li>
+            <li>Usar o conceito de componentes para o Menu e o Footer</li>
+          </ul>
         </p>
-    </footer>
+        <p>Sei que vocês sabem, mas vamos do início. JSON - JavaScript Object Notation - um Anotação em formato de Objeto JavaScript. Como em um arquivo de excel que geralmente tabula os dados utilizando um arquivo CSV, o JSON pode ser usado da mesma forma. No meu exemplo, tenho uma estrutura para a criação dos post que é de repetição: Nome do post, data, criador, imagem, etc. Organizando o arquivo com essas anotações eu posso chamar o objeto no html da página Blog-Dev utilizando a estrutura de repetição. Assim o código fica mais limpo e escalável. Depois de implantar esse JSON e a função chamando uma estrutura de laço mapeando o JSON, não vou precisar mais mexer nessa estrutura a cada novo post. A única coisa que terei que fazer é depois de criar o html do novo post eu tenho que adicionar as informações do novo post no JSON, e a página será atualizada automaticamente, com a função sendo rodada.</p>
+        <p>Com o pouco conhecimento que já adquiri de estrutura de banco de dados, foi fácil montar a estrutura do JSON. Deixando bem limpo e fácil. Nas práticas que tenho visto, geralmente após a abertura das chaves todo mundo pula para a próxima linha e eu preferi manter o id junta da abertura do objeto para facilitar minha busca quando eu minimizar conforme a imagem que coloquei no topo do post.</p>
+        <p>Como o JSON já foi criado, agora estou na parte de criar o primeiro script chamando uma função para apresentar os resultados do JSON na página principal. Nessa mudança, a função deve incluir em torno de 6 linhas de código que irão eliminar em torno de 130 linhas que hoje tem no meu html apenas pra dificultar a manutenção do código. </p>
+    </article>
+  </div>
+</main>
+
+  <footer class="footer">
+    <p class="rodape"> Copyright&copy; 2020 - by Antonio Mendanha<br>
+      <a href="https://www.linkedin.com/in/antoniomendanha/" target="blank">
+        <img class="badge" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="Linkedin_badge" target="blank">
+      </a> 
+      <a href="https://github.com/AntonioMendanha" target="blank">
+        <img class="badge" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="Github_badge" target="blank">
+      </a>
+      <a href="https://www.youtube.com/c/KCafebr" target="blank">
+        <img class="badge" src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="Youtube_badge" target="blank">
+      </a> 
+      <a href="https://twitter.com/antoniomendanha" target="blank">
+        <img class="badge" src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter_badge" target="blank">
+      </a>
+    </p>
+  </footer>
 </body>
 </html>

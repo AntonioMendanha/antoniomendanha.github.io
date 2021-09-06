@@ -1,92 +1,103 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mais uma semana intensa, dessa vez com o projeto da NLW#2 da Rocketseat">
-    <meta name="keywords" conten="Antonio Mendanha, Rocketseat React Typescript iphone SE Kcafe, kcafe, Html, html5, css, css3, aprender">
-    <link rel="icon" href="/images/icons/logoAzul_600x600.jpg" sizes="32x32">
-    <title>Proffy - NLW#2 Rocketseat</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mais uma semana intensa, dessa vez com o projeto da NLW#2 da Rocketseat">
+  <meta name="keywords" conten="Antonio Mendanha, Rocketseat React Typescript iphone SE Kcafe, kcafe, Html, html5, css, css3, aprender">
+  <link rel="icon" href="/images/icons/logoAzul_600x600.jpg" sizes="32x32">
+  <title>Proffy - NLW#2 Rocketseat</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles/main.css">
-    <link rel="stylesheet" href="../styles/nav.css">
-    <link rel="stylesheet" href="../styles/blog_dev.css">
-    <link rel="stylesheet" href="../styles/footer.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/main.css">
+  <link rel="stylesheet" href="../styles/nav.css">
+  <link rel="stylesheet" href="../styles/blog_dev.css">
+  <link rel="stylesheet" href="../styles/footer.css">
 
-    <script data-ad-client="ca-pub-2516481700823716" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script data-ad-client="ca-pub-2516481700823716" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </head>
 
 <body>
+  <header>
     <nav id="header-menu">
-        <h1>Menu principal</h1>
-        <button id="logo_home"><img src="../images/logo_600x600.png" alt="logotipo Kcafe"></button>
-        <ul type="none">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../cafe.html">Café</a></li>
-            <li><a href="../blog_dev.html">Blog-Dev</a></li>
-            <li><a href="../stream.html">Filmes e Séries</a></li>
-            <li><a href="../aboutus.html">Sobre nós</a></li>
-        </ul>
+      <h1>Menu principal</h1>
+      <button id="logo_home"><img src="../images/logo_600x600.png" alt="logotipo Kcafe"></button>
+      <ul type="none">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../cafe.html">Café</a></li>
+        <li><a href="../blog_dev.html">Blog-Dev</a></li>
+        <li><a href="../stream.html">Filmes e Séries</a></li>
+        <li><a href="../aboutus.html">Sobre nós</a></li>
+      </ul>
     </nav>
+  </header>
 
-    <div id="box">
-        <article class="blog_dev">
-            <header class="blog_dev">
-                <h1>Proffy - Conectando Alunos e Professores</h1>
-                <h3>Criado pela Rocketseat e desenvolvido durante a NLW#2</h3>
-                <h6>Escrito por: Antonio Mendanha -  16/08/2020</h6>
-                <figure class="news">   
-                    <img src="../images/blog_print/ago16_proffy.png" alt="Proffy">
-                </figure>   
-            </header>
-            <p>Essa semana foi intensa! Participei da Next Level Week edição 2, um projeto fenomenal desenvolvido pela Rocketseat com foco em desenvolver uma aplicação
-                com backend, frontend e mobile, tudo em isso em apenas 1 semana.</p>
-            <p>Nessa edição tivemos várias novidades, a primeira delas é que foi substituido o JavaScript por TypeScript na aplicação. Como nas últimas edições que participei
-                da Rocketseat, a dinâmica geral manteve o padrão. No primeiro dia foi apresentado a interface geral da aplicação e como seria a UX, além de entender como 
-                como funciona o React e as tecnologias que seriam adotadas no projeto e quando partimos pro código foi desenvolvido o frontend da app. Outra novidade aqui
-                foi introduzido o conceito de <b>Mobile First</b>, então teve muito CSS começando por fazer toda a experiência Mobile primeiro e depois adaptar as páginas 
-                para visualização em navagadores. Este conceito está sendo muito adotado na comunidade tendo em vista que cada vez mais as pessoas utilizam os celulares
-                para as tarefas do cotidiano e usando menos o PC.</p>
-            <p>No segundo dia foi a vez do backend da app, na construção do backend utilizamos a interface gráfica do Insomnia e no banco de dados o SQLite3. 
-                Lógico que poderia ser um banco mais robusto, mas o SQLite3 consegue atender as expectativas. Foi a segunda vez que pude mexer com banco de dados 
-                utilizando o KNEX que permite escrever querry em Javascript. Também foi instalado uma extensão do VSCODE que ajuda a visualizar as tables que foram
-                criadas dentro do banco, as vezes tem um leve bug, mas é só dar um reload no VSCODE e rodar o servidor de novo pra visualizar.</p>
-            <p>Terceiro dia e hora da integração entre frontend e backend. Para fazer essa API se conectar foi utilizado o AXIOS. Agora que o backend já ta rodando é hora 
-                de fazer quase os mesmos passos feitos pra conexão do backend com o banco, conectando o frontend com backend. Um dia relativamente menos 
-                pesado.</p>
-            <p>Usar o CSS as vezes é uma arte! Tem que ter paciência e cuidado pra não ter redundância com linhas em excesso. E o quarto dia teve mais CSS.
-                Chegou a hora do mobile. Apesar de usar o React-Native para o mobile, muitas coisas se repetem e inclusive deu pra aproveitar 
-                muito do código, isso dá uma aceleração imensa para o projeto (quando você sabe o que está fazendo - lógico!). Eu utilizei o EXPO pra poder testar em meu
-                próprio aparelho os resultados. No último projeto da Rocketseat que utilizei o EXPO tive alguns erros que eu não conseguia enxergar, eu fazia o que o Diego
-                mandava e dava certo, mas não entendia o erro. O legal do aprendizado é isso. Quando apareciam alguns erros, eu consegui identificar e resolver antes de 
-                prosseguir. Terminar o dia do projeto foi um pouco mais cansativo sim, mas gratificante por conseguir finalizar com êxito.</p>
-            <p>Quinto dia chegou e hora de conectar também o mobile com o backend. Um dia bem parecido com o terceiro e razoavelmente até mais leve por isso. Inicialmente
-                o mobile não tem as mesmas funcionalidades que vemos no projeto web, porém a maior parte dos apps são assim não é mesmo? O projeto finalizado ficou lindo.
-                A Rocketseat manda muito bem nesse sentido, é uma semana intensa com bastante conteúdo e você consegue assimilar muita coisa se estiver concentrado pra isso.
-                Pontos muito interessantes nessa edição, para andar a "milha extra" foi sugerido a complementação do projeto para a versão PROFFY 2.0. Dessa vez cada dev que
-                participou do projeto ficou com o desafio de implementar a versão 2.0 por sua conta, sem pressão de tempo. No meu caso, o meu vai demorar um pouco.</p>
-            <p>Tive e estou com um problema pra subir o repositório completo no GitHub, tive que apagar o projeto todo do Github e estou tentando subir novamente. Executei um
-                comando errado no final do segundo dia e acabei sobscrevendo o projeto e tive que iniciar novamente. Então decidi primeiro finalizar o projeto e depois com calma
-                estudar o que errei e subir novamente. Durante essa semana 2 coisas me deixaram um pouco tristes, uma delas o problema com o Github e a outra foi não conseguir
-                participar efetivamente da comunidade. A participação na comunidade ajudando outros devs fazem uma boa diferença no aprendizado pois você consegue descobrir coisas 
-                novas enquanto ajuda e também fortalece o networking. </p>
-            <p>Esse artigo foi longo hein. Começei a escrever ele dia 11/08 e só publiquei agora 16/08, o tempo não para. Muita coisa pra fazer e que venha a próxima NLW!
-            <br>
-            <br>O repositório ainda está incompleto porque não subiu a pasta mobile pro respositório.
-            <br>Link do repositório do GitHub: <a href="https://github.com/AntonioMendanha/NLW-02_Proffy" target="_blank" rel="noopener noreferrer">NLW-02 Proffy</a></p>
-            </p>
+<main>
+  <div id="box">
+    <article class="blog_dev">
+      <section class="blog_dev">
+        <h1>Proffy - Conectando Alunos e Professores</h1>
+        <h3>Criado pela Rocketseat e desenvolvido durante a NLW#2</h3>
+        <h6>Escrito por: Antonio Mendanha -  16/08/2020</h6>
+        <figure class="news">   
+          <img src="../images/blog_print/ago16_proffy.png" alt="Proffy">
+        </figure>   
+      </section>
+      <p>Essa semana foi intensa! Participei da Next Level Week edição 2, um projeto fenomenal desenvolvido pela Rocketseat com foco em desenvolver uma aplicação
+        com backend, frontend e mobile, tudo em isso em apenas 1 semana.</p>
+      <p>Nessa edição tivemos várias novidades, a primeira delas é que foi substituido o JavaScript por TypeScript na aplicação. Como nas últimas edições que participei
+        da Rocketseat, a dinâmica geral manteve o padrão. No primeiro dia foi apresentado a interface geral da aplicação e como seria a UX, além de entender como 
+        como funciona o React e as tecnologias que seriam adotadas no projeto e quando partimos pro código foi desenvolvido o frontend da app. Outra novidade aqui
+        foi introduzido o conceito de <b>Mobile First</b>, então teve muito CSS começando por fazer toda a experiência Mobile primeiro e depois adaptar as páginas 
+        para visualização em navagadores. Este conceito está sendo muito adotado na comunidade tendo em vista que cada vez mais as pessoas utilizam os celulares
+        para as tarefas do cotidiano e usando menos o PC.</p>
+      <p>No segundo dia foi a vez do backend da app, na construção do backend utilizamos a interface gráfica do Insomnia e no banco de dados o SQLite3. 
+        Lógico que poderia ser um banco mais robusto, mas o SQLite3 consegue atender as expectativas. Foi a segunda vez que pude mexer com banco de dados 
+        utilizando o KNEX que permite escrever querry em Javascript. Também foi instalado uma extensão do VSCODE que ajuda a visualizar as tables que foram
+        criadas dentro do banco, as vezes tem um leve bug, mas é só dar um reload no VSCODE e rodar o servidor de novo pra visualizar.</p>
+      <p>Terceiro dia e hora da integração entre frontend e backend. Para fazer essa API se conectar foi utilizado o AXIOS. Agora que o backend já ta rodando é hora 
+        de fazer quase os mesmos passos feitos pra conexão do backend com o banco, conectando o frontend com backend. Um dia relativamente menos 
+        pesado.</p>
+      <p>Usar o CSS as vezes é uma arte! Tem que ter paciência e cuidado pra não ter redundância com linhas em excesso. E o quarto dia teve mais CSS.
+        Chegou a hora do mobile. Apesar de usar o React-Native para o mobile, muitas coisas se repetem e inclusive deu pra aproveitar 
+        muito do código, isso dá uma aceleração imensa para o projeto (quando você sabe o que está fazendo - lógico!). Eu utilizei o EXPO pra poder testar em meu
+        próprio aparelho os resultados. No último projeto da Rocketseat que utilizei o EXPO tive alguns erros que eu não conseguia enxergar, eu fazia o que o Diego
+        mandava e dava certo, mas não entendia o erro. O legal do aprendizado é isso. Quando apareciam alguns erros, eu consegui identificar e resolver antes de 
+        prosseguir. Terminar o dia do projeto foi um pouco mais cansativo sim, mas gratificante por conseguir finalizar com êxito.</p>
+      <p>Quinto dia chegou e hora de conectar também o mobile com o backend. Um dia bem parecido com o terceiro e razoavelmente até mais leve por isso. Inicialmente
+        o mobile não tem as mesmas funcionalidades que vemos no projeto web, porém a maior parte dos apps são assim não é mesmo? O projeto finalizado ficou lindo.
+        A Rocketseat manda muito bem nesse sentido, é uma semana intensa com bastante conteúdo e você consegue assimilar muita coisa se estiver concentrado pra isso.
+        Pontos muito interessantes nessa edição, para andar a "milha extra" foi sugerido a complementação do projeto para a versão PROFFY 2.0. Dessa vez cada dev que
+        participou do projeto ficou com o desafio de implementar a versão 2.0 por sua conta, sem pressão de tempo. No meu caso, o meu vai demorar um pouco.</p>
+      <p>Tive e estou com um problema pra subir o repositório completo no GitHub, tive que apagar o projeto todo do Github e estou tentando subir novamente. Executei um
+        comando errado no final do segundo dia e acabei sobscrevendo o projeto e tive que iniciar novamente. Então decidi primeiro finalizar o projeto e depois com calma
+        estudar o que errei e subir novamente. Durante essa semana 2 coisas me deixaram um pouco tristes, uma delas o problema com o Github e a outra foi não conseguir
+        participar efetivamente da comunidade. A participação na comunidade ajudando outros devs fazem uma boa diferença no aprendizado pois você consegue descobrir coisas 
+        novas enquanto ajuda e também fortalece o networking. </p>
+      <p>Esse artigo foi longo hein. Começei a escrever ele dia 11/08 e só publiquei agora 16/08, o tempo não para. Muita coisa pra fazer e que venha a próxima NLW!
+      <br>
+      <br>O repositório ainda está incompleto porque não subiu a pasta mobile pro respositório.
+      <br>Link do repositório do GitHub: <a href="https://github.com/AntonioMendanha/NLW-02_Proffy" target="_blank" rel="noopener noreferrer">NLW-02 Proffy</a></p>
+      </p>
+    </article>
+  </div>
+</main>
 
-        </article>
-    </div>
-
-    <footer>
-        <p class="rodape"> Copyright&copy; 2020 - by Antonio Mendanha<br>
-            <a href="https://www.linkedin.com/in/antoniomendanha/" target="blank"> Linkedin </a> /
-            <a href="https://github.com/AntonioMendanha" target="blank"> GitHub </a> /
-            <a href="https://www.youtube.com/c/KCafebr" target="blank"> Youtube </a> /
-            <a href="https://twitter.com/antoniomendanha" target="blank"> Twitter</a>
-        </p>
-    </footer>
+<footer class="footer">
+  <p class="rodape"> Copyright&copy; 2020 - by Antonio Mendanha<br>
+    <a href="https://www.linkedin.com/in/antoniomendanha/" target="blank">
+      <img class="badge" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="Linkedin_badge" target="blank">
+    </a> 
+    <a href="https://github.com/AntonioMendanha" target="blank">
+      <img class="badge" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="Github_badge" target="blank">
+    </a>
+    <a href="https://www.youtube.com/c/KCafebr" target="blank">
+      <img class="badge" src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="Youtube_badge" target="blank">
+    </a> 
+    <a href="https://twitter.com/antoniomendanha" target="blank">
+      <img class="badge" src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter_badge" target="blank">
+    </a>
+  </p>
+</footer>
 </body>
 </html>

@@ -18,42 +18,54 @@
 </head>
 
 <body>
-  <nav id="header-menu">
-    <h1>Menu principal</h1>
-    <button id="logo_home"><img src="../images/logo_600x600.png" alt="logotipo Kcafe"></button>
-    <ul type="none">
-      <li><a href="../index.html">Home</a></li>
-      <li><a href="../cafe.html">Café</a></li>
-      <li><a href="../blog_dev.html">Blog-Dev</a></li>
-      <li><a href="../stream.html">Filmes e Séries</a></li>
-      <li><a href="../aboutus.html">Sobre nós</a></li>
-    </ul>
-  </nav>
-
+  <header>
+    <nav id="header-menu">
+      <h1>Menu principal</h1>
+      <button id="logo_home"><img src="../images/logo_600x600.png" alt="logotipo Kcafe"></button>
+      <ul type="none">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../cafe.html">Café</a></li>
+        <li><a href="../blog_dev.html">Blog-Dev</a></li>
+        <li><a href="../stream.html">Filmes e Séries</a></li>
+        <li><a href="../aboutus.html">Sobre nós</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
     <div id="box">
       <article class="blog_dev">
-        <header class="blog_dev">
+        <section class="blog_dev">
           <h1>Aprendendo Javascript</h1>
           <h3>Tríade da Web</h3>
           <h6>Escrito por: Antonio Mendanha -  20/07/2021</h6>
           <figure class="news">   
             <img src="../images/blog_print/ago20_javascript.png" alt="Javascript image">   
           </figure>
-        </header>
-            <p>A tríade da WEB é composta por: HTML - CSS - Javascript</p>
-            <p>De forma lúdica podemos comparar com o corpo humano, o HTML seria o nosso esqueleto, o CSS as roupas que vestimos, e o Javascript podemos considerar como os músculos e o cérebro.</p>
-            <p>Olhando por esse lado você ja entende o quanto é necessário ter conhecimento sobre os 3, mas saiba que você pode começar sem o javascript por exemplo. Para páginas estáticas, que não precisam de muita interatividade com o usuário você consegue manter durante um tempo uma página sem o uso do javascript. Ao longo da evolução de seu projeto você irá se deparar com o mesmo código sendo digitado várias vezes, como um cabeçalho, um rodapé, barras de navegação, etc. A partir desse momento já vale começar a pensar em ferramentas para te ajudar a organizar e  dar a manutenção devida para o código.</p>
-            <p>Apesar de conhecer um pouco sobre o Javascript por causa dos projetos criados em React com a Rocketseat e com a Alura, eu dei um passo para trás para entender o principio de como funciona a linguaguem. A primeira coisa positiva foi que esse aprendizado me permitiu logo de cara corrigir alguns scripts que estava usando no Google Sheets. Entendi o uso do MAP e começei a utilizar ele da forma correta. Também reforçei meu conhecimento sobre o FILTER e REDUCE. Esses métodos são muito úteis para a manipulação de arrays, que eu utilizo muito no Google SHEETS.</p>
-            <p>Agora estou reforçando o entendimento sobre os métodos que no meu ponto de vista são os mais importantes para a web, <b>WINDOW.DOCUMENT</b>. São diversas as possibilidades, criar um conteudo para um tag HTML, alterar o contéudo, adicionar um tag HTML ao seu arquivo. Evoluir o tratamento dos formulários tanto na forma de submeter como na aplicação do mesmo dentro da própria página.<br> Pretendo em um outro momento criar artigos sobre esse aprendizado, como um treinamento mesmo. O material já está semi-preparado, só falta formatar e publicar. Esse conteúdo que criei está bem bacana e acho que vão gostar.</p>
+        </section>
+        <p>A tríade da WEB é composta por: HTML - CSS - Javascript</p>
+        <p>De forma lúdica podemos comparar com o corpo humano, o HTML seria o nosso esqueleto, o CSS as roupas que vestimos, e o Javascript podemos considerar como os músculos e o cérebro.</p>
+        <p>Olhando por esse lado você ja entende o quanto é necessário ter conhecimento sobre os 3, mas saiba que você pode começar sem o javascript por exemplo. Para páginas estáticas, que não precisam de muita interatividade com o usuário você consegue manter durante um tempo uma página sem o uso do javascript. Ao longo da evolução de seu projeto você irá se deparar com o mesmo código sendo digitado várias vezes, como um cabeçalho, um rodapé, barras de navegação, etc. A partir desse momento já vale começar a pensar em ferramentas para te ajudar a organizar e  dar a manutenção devida para o código.</p>
+        <p>Apesar de conhecer um pouco sobre o Javascript por causa dos projetos criados em React com a Rocketseat e com a Alura, eu dei um passo para trás para entender o principio de como funciona a linguaguem. A primeira coisa positiva foi que esse aprendizado me permitiu logo de cara corrigir alguns scripts que estava usando no Google Sheets. Entendi o uso do MAP e começei a utilizar ele da forma correta. Também reforçei meu conhecimento sobre o FILTER e REDUCE. Esses métodos são muito úteis para a manipulação de arrays, que eu utilizo muito no Google SHEETS.</p>
+        <p>Agora estou reforçando o entendimento sobre os métodos que no meu ponto de vista são os mais importantes para a web, <b>WINDOW.DOCUMENT</b>. São diversas as possibilidades, criar um conteudo para um tag HTML, alterar o contéudo, adicionar um tag HTML ao seu arquivo. Evoluir o tratamento dos formulários tanto na forma de submeter como na aplicação do mesmo dentro da própria página.<br> Pretendo em um outro momento criar artigos sobre esse aprendizado, como um treinamento mesmo. O material já está semi-preparado, só falta formatar e publicar. Esse conteúdo que criei está bem bacana e acho que vão gostar.</p>
       </article>
     </div>
+  </main>  
 
-  <footer>
+  <footer class="footer">
     <p class="rodape"> Copyright&copy; 2020 - by Antonio Mendanha<br>
-      <a href="https://www.linkedin.com/in/antoniomendanha/" target="blank"> Linkedin </a> /
-      <a href="https://github.com/AntonioMendanha" target="blank"> GitHub </a> /
-      <a href="https://www.youtube.com/c/KCafebr" target="blank"> Youtube </a> /
-      <a href="https://twitter.com/antoniomendanha" target="blank"> Twitter</a>
+    <a href="https://www.linkedin.com/in/antoniomendanha/" target="blank">
+      <img class="badge" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="Linkedin_badge" target="blank">
+    </a> 
+    <a href="https://github.com/AntonioMendanha" target="blank">
+      <img class="badge" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="Github_badge" target="blank">
+    </a>
+    <a href="https://www.youtube.com/c/KCafebr" target="blank">
+      <img class="badge" src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="Youtube_badge" target="blank">
+    </a> 
+    <a href="https://twitter.com/antoniomendanha" target="blank">
+      <img class="badge" src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter_badge" target="blank">
+    </a>
     </p>
   </footer>
 </body>

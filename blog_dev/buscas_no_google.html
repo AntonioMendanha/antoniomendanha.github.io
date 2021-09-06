@@ -18,54 +18,65 @@
 </head>
 
 <body>
+  <header>
     <nav id="header-menu">
-        <h1>Menu principal</h1>
-        <button id="logo_home"><img src="../images/logo_600x600.png" alt="logotipo Kcafe"></button>
-        <ul type="none">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../cafe.html">Café</a></li>
-            <li><a href="../blog_dev.html">Blog-Dev</a></li>
-            <li><a href="../stream.html">Filmes e Séries</a></li>
-            <li><a href="../aboutus.html">Sobre nós</a></li>
-        </ul>
+      <h1>Menu principal</h1>
+      <button id="logo_home"><img src="../images/logo_600x600.png" alt="logotipo Kcafe"></button>
+      <ul type="none">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../cafe.html">Café</a></li>
+        <li><a href="../blog_dev.html">Blog-Dev</a></li>
+        <li><a href="../stream.html">Filmes e Séries</a></li>
+        <li><a href="../aboutus.html">Sobre nós</a></li>
+      </ul>
     </nav>
-
+  </header>
+    
+  <main>
     <div id="box">
-        <article class="blog_dev">
-            <header class="blog_dev">
-                <h1>Buscas no Google</h1>
-                <h3>Robozinho do Google me achou</h3>
-                <h6>Escrito por: Antonio Mendanha -  16/07/2020</h6>
-                <figure class="news">   
-                    <img src="../images/pesquisa_google.png" alt="busca google">   
-                </figure>
-            </header>
-                <p>
-                    Como o próprio Google já avisou que o processo podia demorar alguns dias, aproveitei para navegar na página e verificar como estava a experiência do
-                    usuário e vi que para os dispositivos móveis não estava bacana. 
-                    O logo dentro da &lt;aside&gt; estava ocupando parte da &lt;section&gt; e a visão do menu também não estava legal. Está no escopo criar o 
-                    menu sandwich, mas nesse primeiro momento foi corrigido a visualização e alterado as cores do menu para desktop, acho que ainda vou alterar novamente
-                    depois porque ainda não sei as cores me agradaram.</p>
-                <p>Na madrugada anterior a primeira surpresa, <b>Mamãe, estou no Google</b>! As url's já aparecem no google mas com informações ainda um pouco bagunçadas.
-                    Com rápidas pesquisas descobri o "Pulo do Gato" dos buscadores, os Metadados. Os metadados são campos invisíveis para o usuário contendo a descrição
-                    e o conteúdo do site. A utilização desses metadados ajuda no ranqueamento dentro do Google, em contrapartida o abuso e/ou utilização errada
-                     causam efeito contrário prejudicando o ranqueamento. É preciso ser coerente e colocar as informações corretamente para evitar problemas. Também podem ser usadas 
-                    "palavras-chave" mas li que o excesso delas não bem visto por alguns buscadores. Não é a toa que especialistas em SEO (Search Engine Optimization - Otimização
-                    para mecanismos de busca) são importantes para obter sucesso nos buscadores. Fazer o uso coerente e consistente dos metadados é uma das chaves de sucesso.
-                    O conteúdo do site é o mais importante, mas se ninguém conseguir encontrar ele não vai adiantar muita coisa.</p>
-                <p>Os metadados são incluidos dentro do &lt;head&gt; com a sintaxe <b>&lt;metaname="descrição" content="conteudo da pagina"/&gt</b>.
-                    Agora chegou a hora de começar a fazer a separação dos arquivos do blog, pois como cada artigo tem conteúdos diferentes vou precisar colocar
-                    metadados especificos para cada artigo otimizando os resultados das pesquisas.</p>
-        </article>
+      <article class="blog_dev">
+        <section class="blog_dev">
+          <h1>Buscas no Google</h1>
+          <h3>Robozinho do Google me achou</h3>
+          <h6>Escrito por: Antonio Mendanha -  16/07/2020</h6>
+          <figure class="news">   
+            <img src="../images/pesquisa_google.png" alt="busca google">   
+          </figure>
+        </section>
+        <p>Como o próprio Google já avisou que o processo podia demorar alguns dias, aproveitei para navegar na página e verificar como estava a experiência do
+          usuário e vi que para os dispositivos móveis não estava bacana. 
+          O logo dentro da &lt;aside&gt; estava ocupando parte da &lt;section&gt; e a visão do menu também não estava legal. Está no escopo criar o 
+          menu sandwich, mas nesse primeiro momento foi corrigido a visualização e alterado as cores do menu para desktop, acho que ainda vou alterar novamente
+          depois porque ainda não sei as cores me agradaram.</p>
+        <p>Na madrugada anterior a primeira surpresa, <b>Mamãe, estou no Google</b>! As url's já aparecem no google mas com informações ainda um pouco bagunçadas.
+          Com rápidas pesquisas descobri o "Pulo do Gato" dos buscadores, os Metadados. Os metadados são campos invisíveis para o usuário contendo a descrição
+          e o conteúdo do site. A utilização desses metadados ajuda no ranqueamento dentro do Google, em contrapartida o abuso e/ou utilização errada
+          causam efeito contrário prejudicando o ranqueamento. É preciso ser coerente e colocar as informações corretamente para evitar problemas. Também podem ser usadas 
+          "palavras-chave" mas li que o excesso delas não bem visto por alguns buscadores. Não é a toa que especialistas em SEO (Search Engine Optimization - Otimização
+          para mecanismos de busca) são importantes para obter sucesso nos buscadores. Fazer o uso coerente e consistente dos metadados é uma das chaves de sucesso.
+          O conteúdo do site é o mais importante, mas se ninguém conseguir encontrar ele não vai adiantar muita coisa.</p>
+        <p>Os metadados são incluidos dentro do &lt;head&gt; com a sintaxe <b>&lt;metaname="descrição" content="conteudo da pagina"/&gt</b>.
+          Agora chegou a hora de começar a fazer a separação dos arquivos do blog, pois como cada artigo tem conteúdos diferentes vou precisar colocar
+          metadados especificos para cada artigo otimizando os resultados das pesquisas.</p>
+      </article>
     </div>
-
-    <footer>
-        <p class="rodape"> Copyright&copy; 2020 - by Antonio Mendanha<br>
-            <a href="https://www.linkedin.com/in/antoniomendanha/" target="blank"> Linkedin </a> /
-            <a href="https://github.com/AntonioMendanha" target="blank"> GitHub </a> /
-            <a href="https://www.youtube.com/c/KCafebr" target="blank"> Youtube </a> /
-            <a href="https://twitter.com/antoniomendanha" target="blank"> Twitter</a>
-        </p>
-    </footer>
+  </main>
+    
+  <footer class="footer">
+    <p class="rodape"> Copyright&copy; 2020 - by Antonio Mendanha<br>
+    <a href="https://www.linkedin.com/in/antoniomendanha/" target="blank">
+      <img class="badge" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="Linkedin_badge" target="blank">
+    </a> 
+    <a href="https://github.com/AntonioMendanha" target="blank">
+      <img class="badge" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="Github_badge" target="blank">
+    </a>
+    <a href="https://www.youtube.com/c/KCafebr" target="blank">
+      <img class="badge" src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="Youtube_badge" target="blank">
+    </a> 
+    <a href="https://twitter.com/antoniomendanha" target="blank">
+      <img class="badge" src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter_badge" target="blank">
+    </a>
+    </p>
+  </footer>
 </body>
 </html>

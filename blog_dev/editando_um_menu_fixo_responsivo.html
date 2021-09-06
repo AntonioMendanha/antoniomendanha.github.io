@@ -18,58 +18,69 @@
 </head>
 
 <body>
+  <header>
     <nav id="header-menu">
-        <h1>Menu principal</h1>
-        <button id="logo_home"><img src="../images/logo_600x600.png" alt="logotipo Kcafe"></button>
-        <ul type="none">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../cafe.html">Café</a></li>
-            <li><a href="../blog_dev.html">Blog-Dev</a></li>
-            <li><a href="../stream.html">Filmes e Séries</a></li>
-            <li><a href="../aboutus.html">Sobre nós</a></li>
-        </ul>
+      <h1>Menu principal</h1>
+      <button id="logo_home"><img src="../images/logo_600x600.png" alt="logotipo Kcafe"></button>
+      <ul type="none">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../cafe.html">Café</a></li>
+        <li><a href="../blog_dev.html">Blog-Dev</a></li>
+        <li><a href="../stream.html">Filmes e Séries</a></li>
+        <li><a href="../aboutus.html">Sobre nós</a></li>
+      </ul>
     </nav>
-
+  </header>
+  
+  <main>
     <div id="box">
-        <article class="blog_dev">
-            <header class="blog_dev">
-                <h1>Menu Fixo e Responsivo</h1>
-                <h3>Tava feio no mobile</h3>
-                <h6>Escrito por: Antonio Mendanha -  17/07/2020</h6>
-                <figure class="news">
-                    <img src="../images/blog_print/editando_menu1.png" alt="editando o menu - antes">   
-                </figure>
-            </header>
-            <p>
-                A navegação do site ainda está longe de ser dinâmica, e estou sentindo a necessidade de criar um botão voltar, mas essa inclusão do botão é só 
-                após organizar a publicação de artigos e inclusão dos metadados em cada página. Navegando pelo mobile detectei 3 coisas para corrigir (e uma refatorada nos
-                arquivos CSS). A primeira delas é o tópico desse artigo. Melhorar o menu principal.</p>
-            <p>Optei por fixar o menu porque resolvo o outro problema que é a navegação do site. Com o menu fixo o acesso do usuário as outras partes do site fica mais rápida.
-                Para fixar o menu atribui <b>position: sticky;</b>. Alterei a posição do logo que estava dentro do &lt;aside&gt; joguei ele dentro do menu e atribui
-                um <b>float: left;</b> para fixar ele no início do menu. O logo foi incluido como um &lt;button&gt; pois pretendo deixar ele como um botão pra
-                voltar a Home do site. Dei uma organizada no CSS do menu deixando toda a responsividade do menu no mesmo arquivo. Refatorar o código é importante para facilitar as alterações
-                futuras do código, inclusive inclui alguns comentários dentro do código pois já estava esquecendo o porque tinha atribuido alguns valores e com os comentários vai facilitar 
-                a minha vida mais pra frente sempre que quiser alterar algum layout do site. </p>
-            <p>Apesar de já ter ajustado o menu, a rolagem da página estava me causando desconforto pois as palavras dos artigos estavam sendo misturadas com o menu durante a rolagem.
-                Então atribui um <b>background-color</b> na cor atual do background do site. Agora o outro desconforto era na visualização dos artigos, havia atribuido margens laterais fixas que
-                estavam muito grandes principalmente no mobile. O valor estava atribuido com uma porcentagem muito alta e diminui significativamente deixando o site mais bonito.<br>
-                Já o terceiro problema detectado eu não consegui parar para vericar hoje, são as imagens que estão nos artigos. Inclusive a partir desse artigo vou colocar algumas imagens das 
-                alterações visuais do site a cada artigo para facilitar a compreensão. As imagens estão muito pequenas e não está dando pra ver o que tem nelas a não ser que faça um zoom na
-                mesma, então tenho que ver uma melhor forma de fazer isso.</p>
-            <figure class="images">
-                <img src="../images/blog_print/editando_menu2.png" alt="editando o menu - depois">   
-            </figure>
-            <p>No próximo artigo vou cuidar dessas correções e começar a usar os metadados, na sequência separar os artigos para otimizar os metadados.</p>
-        </article>
+      <article class="blog_dev">
+        <section class="blog_dev">
+          <h1>Menu Fixo e Responsivo</h1>
+          <h3>Tava feio no mobile</h3>
+          <h6>Escrito por: Antonio Mendanha -  17/07/2020</h6>
+          <figure class="news">
+            <img src="../images/blog_print/editando_menu1.png" alt="editando o menu - antes">   
+          </figure>
+        </section>
+        <p>A navegação do site ainda está longe de ser dinâmica, e estou sentindo a necessidade de criar um botão voltar, mas essa inclusão do botão é só 
+          após organizar a publicação de artigos e inclusão dos metadados em cada página. Navegando pelo mobile detectei 3 coisas para corrigir (e uma refatorada nos
+          arquivos CSS). A primeira delas é o tópico desse artigo. Melhorar o menu principal.</p>
+        <p>Optei por fixar o menu porque resolvo o outro problema que é a navegação do site. Com o menu fixo o acesso do usuário as outras partes do site fica mais rápida.
+          Para fixar o menu atribui <b>position: sticky;</b>. Alterei a posição do logo que estava dentro do &lt;aside&gt; joguei ele dentro do menu e atribui
+          um <b>float: left;</b> para fixar ele no início do menu. O logo foi incluido como um &lt;button&gt; pois pretendo deixar ele como um botão pra
+          voltar a Home do site. Dei uma organizada no CSS do menu deixando toda a responsividade do menu no mesmo arquivo. Refatorar o código é importante para facilitar as alterações
+          futuras do código, inclusive inclui alguns comentários dentro do código pois já estava esquecendo o porque tinha atribuido alguns valores e com os comentários vai facilitar 
+          a minha vida mais pra frente sempre que quiser alterar algum layout do site. </p>
+        <p>Apesar de já ter ajustado o menu, a rolagem da página estava me causando desconforto pois as palavras dos artigos estavam sendo misturadas com o menu durante a rolagem.
+          Então atribui um <b>background-color</b> na cor atual do background do site. Agora o outro desconforto era na visualização dos artigos, havia atribuido margens laterais fixas que
+          estavam muito grandes principalmente no mobile. O valor estava atribuido com uma porcentagem muito alta e diminui significativamente deixando o site mais bonito.<br>
+          Já o terceiro problema detectado eu não consegui parar para vericar hoje, são as imagens que estão nos artigos. Inclusive a partir desse artigo vou colocar algumas imagens das 
+          alterações visuais do site a cada artigo para facilitar a compreensão. As imagens estão muito pequenas e não está dando pra ver o que tem nelas a não ser que faça um zoom na
+          mesma, então tenho que ver uma melhor forma de fazer isso.</p>
+        <figure class="images">
+            <img src="../images/blog_print/editando_menu2.png" alt="editando o menu - depois">   
+        </figure>
+        <p>No próximo artigo vou cuidar dessas correções e começar a usar os metadados, na sequência separar os artigos para otimizar os metadados.</p>
+      </article>
     </div>
-
-    <footer>
-        <p class="rodape"> Copyright&copy; 2020 - by Antonio Mendanha<br>
-            <a href="https://www.linkedin.com/in/antoniomendanha/" target="blank"> Linkedin </a> /
-            <a href="https://github.com/AntonioMendanha" target="blank"> GitHub </a> /
-            <a href="https://www.youtube.com/c/KCafebr" target="blank"> Youtube </a> /
-            <a href="https://twitter.com/antoniomendanha" target="blank"> Twitter</a>
-        </p>
-    </footer>
+  </main>
+    
+  <footer class="footer">
+    <p class="rodape"> Copyright&copy; 2020 - by Antonio Mendanha<br>
+    <a href="https://www.linkedin.com/in/antoniomendanha/" target="blank">
+      <img class="badge" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="Linkedin_badge" target="blank">
+    </a> 
+    <a href="https://github.com/AntonioMendanha" target="blank">
+      <img class="badge" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="Github_badge" target="blank">
+    </a>
+    <a href="https://www.youtube.com/c/KCafebr" target="blank">
+      <img class="badge" src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="Youtube_badge" target="blank">
+    </a> 
+    <a href="https://twitter.com/antoniomendanha" target="blank">
+      <img class="badge" src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter_badge" target="blank">
+    </a>
+    </p>
+  </footer>
 </body>
 </html>

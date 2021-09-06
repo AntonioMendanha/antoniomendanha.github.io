@@ -17,6 +17,9 @@ section#aboutus {
   img{
     width: 40%
   }
+  img.badge{
+    width: 100%;
+  }
 /*Videos YouTube - index*/
   .youtube-grid {
     grid-template-columns: 1fr;
@@ -38,6 +41,9 @@ section#aboutus {
 @media (min-width: 501px) { 
   img{
     width: 40%;
+  }
+  img.badge{
+    width: 100%;
   }
   div.youtube-grid{
     display: grid;
@@ -62,6 +68,9 @@ section#aboutus {
 @media (min-width: 901px) {
   img{
     width: 40%
+  }
+  img.badge{
+    width: 100%;
   }
   div.youtube-grid{
     display: grid;

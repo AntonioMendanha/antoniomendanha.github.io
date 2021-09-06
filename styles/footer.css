@@ -1,4 +1,4 @@
-footer {
+.footer {
     clear: both;
 }
 footer p {
@@ -7,8 +7,12 @@ footer p {
 }
 footer p a {
     text-decoration: none;
+    display: inline-block;
 }
 footer p a:hover {
     background-color: var(--menu-background-color);
     border-radius: 2px;
+}
+img.badge {
+    border:none;
 }
