@@ -30,6 +30,7 @@ function mostrarListaArtigos(jsonObject) {
     let createImg = document.createElement('img')
     createImg.setAttribute('src',`${artigo.img_src}`) 
     createImg.setAttribute('alt',`${artigo.img_alt}`) 
+    createImg.setAttribute('class', 'article_img')
     createButton.appendChild(createImg)
     //Inclusão do título
     let createP = document.createElement('p')

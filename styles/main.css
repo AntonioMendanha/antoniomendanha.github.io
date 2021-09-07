@@ -28,7 +28,7 @@ p {
 	text-align: justify;
 }
 .news img{
-	width: 50%;
+	width: 8rem;
 	height: auto;
 }
 .images img{
@@ -50,8 +50,8 @@ img.logo {
 /*div id='box' - caixa principal do site */
 div {
 	background-color: var(--div-background-color);
-	width: 94%;
-	margin: 0.5rem;
+	width: 98%;
+	margin: 0.5%;
 	border-radius: 0.5rem;
 	box-shadow: 0.2rem 0.2rem 1rem black;
 	padding: 0.2rem;
@@ -64,28 +64,10 @@ div .YT_link {
 	display: inline-block;
 }
 
-header#newsTitle h1{
-	font-weight: bold;
-	font-size: 2rem;
-	text-align: center;
-	margin-bottom: 0px;
-}
-header#newsTitle h3{
-	margin-top: 0px;
-	font-size: 1rem;
-	text-align: center;
-}
-header#newsTitle h6{
-	text-align: right;
-}
-
 section#content , section#aboutus {
 	display: block;
 	justify-content: center;
 	margin: 0 2% 0 2%;
-}
-div#site, div#creator, div#youtube {
-	width: 88vw;
 }
 div#site h1, div#creator h1{
 	text-align: center;
