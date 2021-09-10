@@ -1,10 +1,13 @@
+header {
+  position: sticky;/*menu fixo*/
+  top: 0px;/*menu fixo*/
+}
+
 #header-menu {
-    position: sticky;/*menu fixo*/
     align-items: center;
     display: flex;
     background-color: var(--background-color);
     height: 100px;
-    top: 0px;/*menu fixo*/
 }
 
 #header-menu h1 { /*Ocultar H1*/
