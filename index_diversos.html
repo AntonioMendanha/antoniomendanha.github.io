@@ -6,7 +6,7 @@
   <meta name="description" content="Confira as críticas mais recentes das suas séries e filmes  preferidos aqui.">
   <meta name="keywords" content="series filmes criticas Antonio Mendanha Kcafe, kcafe">
   <link rel="icon" href="/images/icons/logoAzul_600x600.jpg" sizes="32x32">
-  <title>KCafe - Filmes e Séries</title>
+  <title>KCafe - Post diversos</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/main.css">
@@ -20,42 +20,63 @@
 </head>
 
 <body>
-  <header>
-    <nav id="header-menu">
-      <h1>Menu principal</h1>
-      <button id="logo_home"><img src="./images/logo_600x600.png" alt="logotipo Kcafe"></button>
-      <ul type="none">
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./cafe.html">Café</a></li>
-        <li><a href="./blog_dev.html">Blog-Dev</a></li>
-        <li><a href="./stream.html">Filmes e Séries</a></li>
-        <li><a href="./aboutus.html">Sobre nós</a></li>
-      </ul>
-    </nav>
-  </header>
+	<header>
+		<nav class="header-menu" id="header-menu">
+			<h1>Menu principal</h1>
+			<button id="logo_home"><img src="./images/logo_600x600.png" alt="logotipo Kcafe"></button>
+			<ul type="none" class="header-menu" id="menu-lista">
+				<li><a href="./index.html">Home</a></li>
+				<li><a href="./index_letscode.html">Exercícios</a></li>
+				<li><a href="./blog_dev.html">Blog-Dev</a></li>
+				<li><a href="./index_diversos.html">Diversos</a></li>
+				<li><a href="./aboutus.html">Sobre mim</a></li>
+			</ul>
+		</nav>
+	</header>
 
   <main>
     <div id="box">
       <article id="list_article">
         <header>Críticas de séries e filmes - Vale a pena assitir a série que seu amigo está indicando?</header>
+        
+        <button
+        class="news"
+        type="button"
+        onclick='window.location.href="./diversos/resumo_historia_do_cafe.html"'
+      >
+        <img src="https://images.unsplash.com/photo-1524350876685-274059332603?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80" alt="Saca com grãos de café arábica">
+        <p>[Café] Resumo da história do café </p>
+        <h6>Escrito por: Antonio Mendanha -  21/07/2020</h6>
+      </button>
+
         <button
           class="news"
           type="button"
-          onclick='window.location.href="./stream/desencanto_3_motivos_pra_assitir.html"'
+          onclick='window.location.href="./diversos/desencanto_3_motivos_pra_assitir.html"'
         >
           <img src="https://i0.wp.com/seriesemcena.com.br/wp-content/uploads/2018/08/desencanto-netflix.jpg" alt="Desencanto a serie">   
           <p>[Séries] Desencanto - Vale a pena assitir? </p>
           <h6>Escrito por: Antonio Mendanha -  20/07/2020</h6>
         </button>
-            
+
         <button
           class="news"
           type="button"
-          onclick='window.location.href="./stream/critica_snowpiercer_serie_e_bom.html"'
+          onclick='window.location.href="./diversos/critica_snowpiercer_serie_e_bom.html"'
         >
           <img src="https://occ-0-3746-1123.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABWrf-kj1ylo-XrgGFxLywMyFbiiEGZHG5-1X-wpPBmGe36ecGHlBMUM7tkCc2GyTL4X-7cil95sLFRU4fnNJT7y8yqZW.jpg?r=a4e&quot" alt="snowpiercer serie netflix">   
           <p>[Séries] Expresso do amanhã - Snowpiercer: O trem de 1001 vagões que não para nunca. </p>
           <h6>Escrito por: Antonio Mendanha -  14/07/2020</h6>
+        </button>
+
+        <button
+          class="news"
+          type="button"
+          onclick='window.location.href="./diversos/cafe_coado.html"'
+        >
+          <img src="https://images.unsplash.com/photo-1518832553480-cd0e625ed3e6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="Xícara de café">
+          <p>[Café] Vamos falar sobre café coado </p>
+          <h6>Escrito por: Antonio Mendanha -  28/06/2020</h6>
         </button>
       </article>                
     </div>

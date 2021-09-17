@@ -1,0 +1,94 @@
+:root {
+	--primary-color: #103481;
+	--second-color: #fcfcfcd4;
+	--background-color: #8fadad;
+	--div-background-color: #d7dfdf;
+	--menu-background-color: rgba(153, 102, 0, 0.5);
+	--menu-color-button: #996600;    
+}
+
+* {
+	color: var(--primary-color);
+	font-family: 'Arial', sans-serif;
+	font-display: swap;
+	padding: 0px;
+	margin: 0px;
+}
+body {
+	background-color:var(--background-color);
+}
+header {
+  max-width: 1200px;
+}
+nav#header_menu {
+  background-color: var(--background-color);
+  top: 0px;/*menu fixo*/
+  position: fixed;/*menu fixo*/
+  display: flex;
+  align-items: center;
+  height: 100px;
+}
+
+#header-menu h1 { /*Ocultar H1*/
+  display: none;
+}
+/*Formatação do menu*/
+#header-menu ul{
+  display: flex;
+  list-style: none;
+  text-transform: uppercase;
+  margin: 10px;
+}
+/*formatar itens do menu*/
+#header-menu li {
+    background-color: var(--menu-color-button);
+    padding: 4px;
+    margin: 10px;
+    
+    border-radius: 2px;
+    transition: 0.5ms;
+}
+#header-menu li:hover {
+    background-color: var(--menu-background-color);
+}
+#header-menu a {
+    color: var(--second-color);
+    text-decoration: none;
+    transition: 0.3s;
+}
+#header-menu a:hover {
+    color: white;
+}
+button#logo_home {
+  border: none;
+  float: left;
+  background-color: var(--background-color);
+
+}
+button#logo_home img {
+    width: 50px;
+    height: auto;
+    background-color: var(--background-color);
+    border: none;
+}
+/* ------ Fim das configurações principais da página ------ */
+
+.body_exercicio {
+  background-color: var(--div-background-color);
+	width: 70vw;
+	margin: 3vh auto;
+	border-radius: 0.5rem;
+	box-shadow: 0.2rem 0.2rem 1rem black;
+	padding: 0.2rem;
+}
+h2 {
+  margin: 2rem;
+}
+#lista_ol {
+  margin: 2rem;
+  padding: 0.2rem;
+} 
+#lista_ol > li {
+  margin: 0.4rem 0;
+  font-size: 1.5rem;
+}

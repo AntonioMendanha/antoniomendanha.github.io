@@ -1,0 +1,63 @@
+:root {
+  --height-container: 30vh;
+}
+
+section {
+  margin: 0px;
+}
+.secondaryHeader {
+  background: black;
+  height: 15vh;
+}
+.ball {
+  display: inline-block;
+  background: rgb(0, 124, 128);
+  border: solid rgb(0, 124, 128);
+  border-radius:50%;
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-top: 10vh;
+  margin-left: 0.8rem;
+}
+ul {
+  margin: 0px;
+}
+div.text{
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  padding-top: 0.5rem;
+  text-align: center;
+}
+
+.header,
+.footer{
+  height: 8vh;
+  background: rgb(70, 140, 245);
+}
+/* .header div,
+.footer div {
+  text-align: center;
+} */
+.main {
+  float: left;
+  height: var(--height-container);
+  width: 50vw;
+  background: rgb(94, 29, 94);
+} 
+.aside {
+  display: inline-block;
+  height: var(--height-container);
+  width: 10vw;
+  background: rgb(238, 165, 81);
+}
+.nav{
+  float: right;
+  height: var(--height-container);
+  width: 10vw;
+  background: rgb(241, 140, 8);
+}
+.aside div,
+.nav div {
+  padding-left: 2vw;
+}

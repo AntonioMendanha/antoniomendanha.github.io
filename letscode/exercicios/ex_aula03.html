@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Listagem de exercicios que foram propostos durante o curso.">
+    <meta name="keywords" content="letscode, Santander, web full stack">
+    <link rel="icon" href="../../images/icons/logoAzul_600x600.jpg" sizes="32x32">
+    <title>Ex 03 - CSS - Formatando um formulário</title>
+  
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../styles/main_letscode.css">
+    <link rel="stylesheet" href="../../styles/footer.css">
+    <link rel="stylesheet" href="../../styles/responsive.css">
+    <link rel="stylesheet" href="../../index_letscode.css">
+    <link rel="stylesheet" href="ex_aula03.css">
+  
+    <script data-ad-client="ca-pub-2516481700823716" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="header-menu" id="header-menu">
+        <h1>Menu principal</h1>
+        <button id="logo_home"><img src="../../images/logo_600x600.png" alt="logotipo Kcafe"></button>
+        <ul type="none" class="header-menu" id="menu-lista">
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../../index_letscode.html">Exercícios</a></li>
+          <li><a href="../../blog_dev.html">Blog-Dev</a></li>
+          <li><a href="../../index_diversos.html">Diversos</a></li>
+          <li><a href="../../aboutus.html">Sobre mim</a></li>
+        </ul>
+      </nav>
+    </header>
+  
+    <main>
+      <section class="main_header_section">
+        <button type="button"><a href="../../index_letscode.html">Indice de Exercícios</a></button>
+        <h1>Curso Web Full Stack</h1>
+        <span></span>
+      </section>
+      
+      <div class="body_exercicio">
+        <section class='first_section'>
+          <h2>Cadastro de Cliente</h2>
+        </section>
+        
+        <section>
+          <form onsubmit="console.table([...new FormData(document.querySelector('form'))])">
+            <fieldset>
+              <legend>Informações de acesso</legend>
+              <input type="text" name="login" placeholder="USUARIO" autofocus required />
+              <input type="password" name="password" placeholder="*****" required/>
+            </fieldset>
+      
+            <fieldset>
+              <legend>Cadastro Básico</legend>
+              <div>
+                <label class="required">
+                  Nome*
+                  <input 
+                    type="text"
+                    name="name"
+                    placeholder="Nome" 
+                    required/>
+                </label>
+                <label class="required">
+                  Sobrenome*
+                  <input 
+                    type="text"
+                    name="lastname"
+                    placeholder="Sobrenome"
+                    required/>
+                </label>
+                <label class="required">
+                  Data de nascimento*
+                  <input
+                    type="date" 
+                    name="birthdate" 
+                    required/>
+                </label>
+                <label class="required">
+                  Telefone p/ contato*
+                  <input 
+                    type="tel" 
+                    name="phone" 
+                    placeholder="(xx)xxxx-xxxx" 
+                    required/>
+                </label>
+              </div>
+              
+              <div>
+                <label>
+                  Email
+                  <input 
+                    type="email" 
+                    name="email" 
+                    placeholder="seuemail@email.com" />
+                </label>
+              </div>  
+              <div>
+                <label>
+                  Endereço
+                  <input 
+                    type="text" 
+                    name="adress" 
+                    placeholder="Seu endereço" />
+                </label>
+                <label>
+                  Número
+                  <input
+                    type="number"
+                    name="adress_number"
+                    placeholder="Número do endereço"/>
+                </label>
+                <label>
+                  Complemento
+                  <input 
+                    type="text" 
+                    name="adress_complement" />
+                </label>
+              </div>
+              
+            </fieldset>
+      
+            <fieldset>
+              <legend>Dados da entrega</legend>
+              <label class="required">
+                Endereço*
+                <input
+                  type="text"
+                  name="delivery_adress"
+                  placeholder="Seu endereço"
+                  required/>
+              </label>
+              <label class="required">
+                Número*
+                <input
+                  type="number"
+                  name="delivery_adress_number"
+                  placeholder="Número do endereço"
+                  required/>
+              </label>
+              <label class="required">
+                Complemento
+                <input 
+                  type="text" 
+                  name="delivery_adress_complement"
+                  required />
+              </label>
+            </fieldset>
+      
+            <fieldset>
+              <legend>Opcionais</legend>
+              <label>
+                Cor preferida
+                <input 
+                  type="color" 
+                  name="favorite_color" />
+              </label>
+              <label>
+                Mês de Cadastro
+                <input 
+                  type="month" 
+                  name="cadastre_month" />
+              </label>
+              <label>
+                Foto
+                <input 
+                  type="file" 
+                  name="photo"/>
+              </label>
+            </fieldset>
+      
+            <button type="reset">
+              Reset
+            </button>
+            <button 
+              type="submit" 
+              onclick="console.table([...new FormData(document.querySelector('form'))])"
+              >
+              Enviar
+            </button>
+          </form>
+        </section>
+      </div>
+    </main>
+
+    <footer class="main_footer_section">
+      Desenvolvido durante a bolsa de estudos do Santader para Web Full Stack
+    </footer>
+  </body>
+</html>
