@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Listagem de exercicios que foram propostos durante o curso.">
+    <meta name="keywords" content="letscode, Santander, web full stack">
+    <link rel="icon" href="../../images/icons/logoAzul_600x600.jpg" sizes="32x32">
+    <title>Ex 08 - Condicionais</title>
+  
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../styles/main_letscode.css">
+    <link rel="stylesheet" href="../../styles/footer.css">
+    <link rel="stylesheet" href="../../styles/responsive.css">
+    <link rel="stylesheet" href="../../index_letscode.css">
+    <link rel="stylesheet" href="./styles/modulojs.css">
+  
+    <script data-ad-client="ca-pub-2516481700823716" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="header-menu" id="header-menu">
+        <h1>Menu principal</h1>
+        <button id="logo_home"><img src="../../images/logo_600x600.png" alt="logotipo Kcafe"></button>
+        <ul type="none" class="header-menu" id="menu-lista">
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../../index_letscode.html">Exercícios</a></li>
+          <li><a href="../../blog_dev.html">Blog-Dev</a></li>
+          <li><a href="../../index_diversos.html">Diversos</a></li>
+          <li><a href="../../aboutus.html">Sobre mim</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="main_header_section">
+      <button type="button"><a href="../../index_letscode.html">Indice de Exercícios</a></button>
+      <h1>Curso Web Full Stack</h1>
+      <span></span>
+    </section>
+
+  <main>
+    <h1>Exercícios de Javascript - Condicionais</h1>
+    <section class="firstExample">
+      <div class="exercise">
+        <p>Crie uma função que recebe um numero.<br>
+          1ª condição: Se o numero for maior ou igual a 0, deve ser retornado o mesmo valor,<br>
+          2ª condição: Se o valor for menor, o valor multiplicado por -1.</p>
+        <form>
+          <label>
+            Insira um número
+            <input type="number" name="number" id="number">
+          </label>
+          <input type="button" value="Testar" onclick="getNumber()">
+        </form>
+        <div class="answer" id="firstAnswer"></div>
+      </div>
+      
+      <code>
+        <pre>
+    function getNumber() {
+      let inputNumber = document.getElementById('number');
+      let getNumber = Number(inputNumber.value);
+      let answer = document.getElementById('firstAnswer');
+      
+      let result;
+      
+      if (getNumber >= 0) {
+        result = `O número digitado obedece a primeira condição do exercício - retorno: ${getNumber}`;
+      } else {
+        result = `O número digitado obedece a primeira condição do exercício - retorno: ${getNumber * -1}`;
+      }
+    
+      return answer.innerHTML = result;
+    }
+        </pre>
+      </code>
+    </section>
+  
+    <section class="secondExample">
+      <div class="exercise">
+        <p>
+          Crie uma função que receba uma string</p>
+          1ª condição: Se a string for "gato", deve ser retornada a string "Miau".<br>
+          2ª condição: Se a strinr for "cachorro", deve ser retornada a string "Auau".<br>
+          3ª condição: Se a string for "peru", deve ser retornada a string "Gluglu".<br>
+          4ª condição: Caso a string não seja nenhum desses valores, deve ser retornada a string "Animal desconhecido"
+        </p>
+    
+        <form>
+          <label>
+            Insira o nome de um Animal
+            <input type="text" name="animal" id="animal">
+          </label>
+          <input type="button" value="Testar" onclick="animalSound()">
+        </form>
+        <div class="answer" id="secondAnswer"></div>
+      </div>
+
+      <code>
+        <pre>
+    function animalSound() {
+      let inputText = document.getElementById('animal');
+      let animal = inputText.value;
+      let answer = document.getElementById('secondAnswer')
+    
+      let result;
+    
+      switch (animal) {
+        case "gato":
+          result = `Miau é o som que o ${animal} faz.`;
+          break;
+        case "cachorro":
+          result = `Auau é o som que o ${animal} faz.`;
+          break;
+        case "peru":
+          result = `Gluglu é o som que o ${animal} faz.`;
+          break;
+        default: 
+          result = `Não temos o som de ${animal} cadastrado`;
+      }
+      
+        return answer.innerHTML = result;
+    }
+        </pre>
+      </code>
+    </section>
+    <script src="../scripts/aula08.js
+    "></script>
+  </main>
+  
+  <footer class="main_footer_section">
+    Desenvolvido durante a bolsa de estudos do Santader para Web Full Stack
+  </footer>
+</body>
+</html>

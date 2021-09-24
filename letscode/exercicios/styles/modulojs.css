@@ -1,0 +1,54 @@
+main {
+  background-color: var(--div-background-color);
+  width: 70vw;
+  margin: 3vh auto;
+  border-radius: 0.5rem;
+  box-shadow: 0.2rem 0.2rem 1rem black;
+  padding: 1rem;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
+section {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-around
+}
+
+div.exercise{
+  margin: 1rem 1rem auto auto;
+    padding: 0.2rem;
+}
+
+label {
+  margin: 10px auto;
+  padding: 5px;
+}
+
+.answer {
+  font: bold;
+  background-color: var(--menu-background-color);
+  width: 50%;
+  justify-self: center;
+  align-self: center;
+}
+
+code {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.2rem auto;
+}
+
+
+pre {
+  font: 0.5rem;
+  border: 1px solid black;
+  border-radius: 1rem;
+  box-shadow: 0.2rem 0.2rem 1rem black;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  width: fit-content;
+}

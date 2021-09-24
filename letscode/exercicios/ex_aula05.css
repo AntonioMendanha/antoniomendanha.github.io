@@ -1,23 +1,31 @@
 
 main {
   border: 1px solid black;
-  margin: 0 5vw 0 5vw;
+  width: 90vw;
+  margin: auto;
 }
 header.header {
   width: 100%;
   flex-direction: column;
 }
-
+.body_exercicio {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
 .header_container {
   background-color: cornflowerblue;
   display: block;
   width: 100%;
   height: 15vh;
+  border: 1px solid black;
+
 }
 .img {
   border: 1px solid black;
-  margin-top: 6vh;
-  margin-left: 2vh;
+  position: relative;
+  top: 40%;
+  left: 0.5rem;
   height: 8vh;
   width: 15vh;
 }
@@ -26,16 +34,20 @@ header.header {
   background-color: rgb(160, 190, 245);
   width: 100%;
   height: 5vh;
+  border: 1px solid black;
+  border-top: none;
 }
 .nav_container {
   display: flex;
   width: 100%;
   flex-direction: row;
   justify-content: space-evenly;
+  border: none;
 }
 ul {
   padding:0;
   margin-top: 1vh;
+  border: none;
 }
 li{
   list-style: none;
@@ -48,18 +60,23 @@ section.banner {
   height: 20vh;
   display: flex;
   justify-content: flex-end;
+  border: 1px solid black;
+  border-top: none;
 }
 span#banner_title {
   font: 1.5rem bold arial;
   background-color: rgb(78, 119, 78);
+  position: relative;
+  top: 50%;  
   padding: 8px;
   height: fit-content;
-  margin: 12vh 2vh 3.5vh 0px;
  
 }
 section.main {
   display: flex;
   flex-direction: row;
+  border: 1px solid black;
+  border-top: none;
 }
 div.container {
   justify-content: stretch;
@@ -71,6 +88,7 @@ aside {
   width: 20%;
   display: flex;
   flex-direction: column;
+  border-left: 1px solid black;
 }
 div.item {
   text-align: center;
@@ -82,7 +100,9 @@ section.footer{
   width: 100%;
   height: 15vh;
   display: flex;
-  align-items: center;
+  align-items: center; 
+  border: 1px solid black;
+  border-top: none;
 }
 span#footer_text {
   align-items: center;

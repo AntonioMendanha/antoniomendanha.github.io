@@ -17,9 +17,7 @@
 body {
 	background-color:var(--background-color);
 }
-header {
-  max-width: 1200px;
-}
+
 nav#header_menu {
   background-color: var(--background-color);
   top: 0px;/*menu fixo*/

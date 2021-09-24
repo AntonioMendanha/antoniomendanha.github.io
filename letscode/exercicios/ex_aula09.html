@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Listagem de exercicios que foram propostos durante o curso.">
+    <meta name="keywords" content="letscode, Santander, web full stack">
+    <link rel="icon" href="../../images/icons/logoAzul_600x600.jpg" sizes="32x32">
+    <title>Exercício JS</title>
+  
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../styles/main_letscode.css">
+    <link rel="stylesheet" href="../../styles/footer.css">
+    <link rel="stylesheet" href="../../styles/responsive.css">
+    <link rel="stylesheet" href="../../index_letscode.css">
+    <link rel="stylesheet" href="./styles/modulojs.css">
+  
+    <script data-ad-client="ca-pub-2516481700823716" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="header-menu" id="header-menu">
+        <h1>Menu principal</h1>
+        <button id="logo_home"><img src="../../images/logo_600x600.png" alt="logotipo Kcafe"></button>
+        <ul type="none" class="header-menu" id="menu-lista">
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../../index_letscode.html">Exercícios</a></li>
+          <li><a href="../../blog_dev.html">Blog-Dev</a></li>
+          <li><a href="../../index_diversos.html">Diversos</a></li>
+          <li><a href="../../aboutus.html">Sobre mim</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="main_header_section">
+      <button type="button"><a href="../../index_letscode.html">Indice de Exercícios</a></button>
+      <h1>Curso Web Full Stack</h1>
+      <span></span>
+    </section>
+
+  <main>
+    <h1>Exercícios de Javascript - Condicionais</h1>
+    <section class="firstExample" id="firstExample">
+      <div class="exercise" id="firstExercise">
+        <p>
+          Crie uma função que receba 2 argumentos um texto e uma letra.<br>
+          A funçao deverá percorrer o texto e descobrir o indíce que se encontra a letra passada.
+        </p>
+        <form>
+          <label>
+            Insira a palavra desejada: 
+            <input type="text" name="firstTextInput" id="firstWordInput">
+          </label>
+          <label>
+            Insira qual a letra deseja saber a posição: 
+            <input type="text" name="firstLetterInput" id="firstLetterInput">
+          </label>
+          <input type="button" value="Procurar" onclick="findLetterIndex()">
+        </form>
+        <div class="answer" id='firstAnswer'></div>
+      </div>
+
+      <code>
+        <pre>
+    function findLetterIndex(){
+      let wordInput = document.getElementById('firstWordInput');
+      let letterInput = document.getElementById('firstLetterInput');
+      let answer = document.getElementById('firstAnswer');
+      let wordValue = wordInput.value;
+      let letterValue = letterInput.value;
+    
+      let cont = 0;
+      let result = [];
+      
+      while (wordValue.length > cont ) {
+        if (wordValue[cont] === letterValue) {
+          result.push(`A letra ${letterValue} foi encontrada na posição ${cont}`);
+        }
+    
+        cont++
+      }
+    
+      return answer.innerHTML = result[0];
+    }
+        </pre>
+      </code>
+    </section>
+
+    <section class="secondExample">
+      <div class="exercise" id="secondExercise">
+        <p>
+          Repita o exercício anterior mostrando a última vez que a letra aparece.
+        </p>
+        <form>
+          <label>
+            Insira a palavra desejada: 
+            <input type="text" name="secondWordInput" id="secondWordInput">
+          </label>
+          <label>
+            Insira qual letra deseja saber a última posição:
+            <input type="text" name="secondLetterInput" id="secondLetterInput">
+          </label>
+          <input type="button" value="Procurar" onclick="findLastLetterIndex()">
+        </form>
+        <div class="answer" id="secondAnswer"></div>
+      </div>
+
+      <code>
+        <pre>
+    function findLastLetterIndex(){
+      let wordInput = document.getElementById('secondWordInput');
+      let letterInput = document.getElementById('secondLetterInput');
+      let answer = document.getElementById('secondAnswer');
+      let wordValue = wordInput.value;
+      let letterValue = letterInput.value;
+    
+      let cont = 0;
+      let result = [];
+      
+      while (wordValue.length > cont) {
+        if (wordValue[cont] === letterValue) {
+          result.push(`A letra ${letterValue} foi encontrada na posição ${cont}`);
+        }
+    
+        cont++
+      }
+      let lastIndex = result.length - 1;
+      return answer.innerHTML = result[lastIndex];
+    }
+        </pre>
+      </code>
+    </section>
+
+    <section class="thirdExample" id="thirdExample">
+      <div class="exercise" id="thirdExercise">
+        <p>Repetir o primeiro exemplo, mas dessa vez mostrar todas as ocorrências.</p>
+        <form>
+          <label>
+            Insira a palavra desejada: 
+            <input type="text" id="thirdWordInput">
+          </label>
+          <label>
+            Insira a letra que deseja verificar: 
+            <input type="text" id="thirdLetterInput">
+          </label>
+          <input type="button" value="Procurar" onclick="findLetter()">
+        </form>
+        <div class="answer" id="thirdAnswer"></div>
+      </div>
+
+      <code>
+        <pre>
+    function findLetter() {
+      let wordInput = document.getElementById('thirdWordInput');
+      let letterInput = document.getElementById('thirdLetterInput');
+      let answer = document.getElementById('thirdAnswer');
+      let wordValue = wordInput.value;
+      let letterValue = letterInput.value;
+    
+      let result = [];
+      let cont =0;
+      while (wordValue.length > cont) {
+        if (wordValue[cont] === letterValue){
+          result.push(`A letra ${letterValue} foi encontrada na posição ${cont}`)
+        } 
+        cont++
+      }
+      const printAllAnswer = `${result[0]} <br> ${result[1]}`;
+      return answer.innerHTML = printAllAnswer;
+    }
+        </pre>
+      </code>
+    </section>
+    
+    <script src="../scripts/aula09.js"></script>
+  </main>
+  
+  <footer class="main_footer_section">
+    Desenvolvido durante a bolsa de estudos do Santader para Web Full Stack
+  </footer>
+</body>
+</html>
