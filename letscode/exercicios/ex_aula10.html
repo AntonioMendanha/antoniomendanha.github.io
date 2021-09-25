@@ -40,7 +40,7 @@
 
   <main>
     <h1>Exercícios de Javascript - Condicionais</h1>
-    <h2>Procurando o indice de uma letra com While </h2>
+    <h2>Procurando o indice de uma letra com For</h2>
     <section class="firstExample" id="firstExample">
       <div class="exercise" id="firstExercise">
         <p>
@@ -63,119 +63,86 @@
 
       <code>
         <pre>
-    function findLetterIndex(){
-      let wordInput = document.getElementById('firstWordInput');
-      let letterInput = document.getElementById('firstLetterInput');
-      let answer = document.getElementById('firstAnswer');
-      let wordValue = wordInput.value;
-      let letterValue = letterInput.value;
-    
-      let cont = 0;
-      let result = [];
-      
-      while (wordValue.length > cont ) {
-        if (wordValue[cont] === letterValue) {
-          result.push(`A letra ${letterValue} foi encontrada na posição ${cont}`);
-        }
-    
-        cont++
-      }
-    
-      return answer.innerHTML = result[0];
-    }
+   
         </pre>
       </code>
     </section>
 
-    <h2>Procurando o último indice de uma letra com While</h2>
+    <h2>Criando uma sequência de Fibonacci</h2>
     <section class="secondExample">
       <div class="exercise" id="secondExercise">
         <p>
-          Repita o exercício anterior mostrando a última vez que a letra aparece.
+          Crie uma função que receba um argumento que será a quantidade de numeros da sequência de Fibonnaci<br>
+          A função retornará o array que foi iniciado com [0, 1]
         </p>
         <form>
           <label>
-            Insira a palavra desejada: 
-            <input type="text" name="secondWordInput" id="secondWordInput">
+            Insira a quantidade de números da sequência de Fibonacci deseja ver: 
+            <input type="number" name="fibonnaciInput" id="fibonnaciInput">
           </label>
-          <label>
-            Insira qual letra deseja saber a última posição:
-            <input type="text" name="secondLetterInput" id="secondLetterInput">
-          </label>
-          <input type="button" value="Procurar" onclick="findLastLetterIndex()">
+          <input type="button" value="Procurar" onclick="fibonacci()">
         </form>
         <div class="answer" id="secondAnswer"></div>
       </div>
 
       <code>
         <pre>
-    function findLastLetterIndex(){
-      let wordInput = document.getElementById('secondWordInput');
-      let letterInput = document.getElementById('secondLetterInput');
-      let answer = document.getElementById('secondAnswer');
-      let wordValue = wordInput.value;
-      let letterValue = letterInput.value;
-    
-      let cont = 0;
-      let result = [];
-      
-      while (wordValue.length > cont) {
-        if (wordValue[cont] === letterValue) {
-          result.push(`A letra ${letterValue} foi encontrada na posição ${cont}`);
-        }
-    
-        cont++
-      }
-      let lastIndex = result.length - 1;
-      return answer.innerHTML = result[lastIndex];
-    }
         </pre>
       </code>
     </section>
 
-    <h2>Mostrando todas as ocorrências de uma letra com While</h2>
+    <h2>Soma condicional de um array</h2>
     <section class="thirdExample" id="thirdExample">
       <div class="exercise" id="thirdExercise">
-        <p>Repetir o primeiro exemplo, mas dessa vez mostrar todas as ocorrências.</p>
+        <p>
+          Crie uma função que receba um array<br>
+          A função deverá retornar a soma dos números pares desse array.
+        </p>
         <form>
           <label>
-            Insira a palavra desejada: 
-            <input type="text" id="thirdWordInput">
+            Insira a quantidade de posições do array: 
+            <input type="number" id="arrayLength">
           </label>
-          <label>
-            Insira a letra que deseja verificar: 
-            <input type="text" id="thirdLetterInput">
-          </label>
-          <input type="button" value="Procurar" onclick="findLetter()">
+          <!--Os números serão adicionados com um alert-->
+          <input type="button" value="Procurar" onclick="somaPares()">
         </form>
         <div class="answer" id="thirdAnswer"></div>
       </div>
 
       <code>
         <pre>
-    function findLetter() {
-      let wordInput = document.getElementById('thirdWordInput');
-      let letterInput = document.getElementById('thirdLetterInput');
-      let answer = document.getElementById('thirdAnswer');
-      let wordValue = wordInput.value;
-      let letterValue = letterInput.value;
-    
-      let result = [];
-      let cont =0;
-      while (wordValue.length > cont) {
-        if (wordValue[cont] === letterValue){
-          result.push(`A letra ${letterValue} foi encontrada na posição ${cont}`)
-        } 
-        cont++
-      }
-      const printAllAnswer = `${result[0]} <br> ${result[1]}`;
-      return answer.innerHTML = printAllAnswer;
-    }
         </pre>
       </code>
     </section>
+
+    <h2>Listar somente um valor de propriedades do objeto dentro de um array</h2>
+    <section class="fourthExample" id="fourthExample">
+      <div class="exercise" id="fourthExercise">
+        <p>
+          Crie uma função que receba um array de funcionários<br>
+          Formato do array de objetos: [{nome:'nomePrimeiro', idade: 22]<br>
+          A função deverá retornar somente os nomes dos funcionários.
+        </p>
+        <form>
+          <label>
+            Insira a quantidade de funcionários: 
+            <input type="number" id="arrayLength">
+          </label>
+          <!--O input dos funcionários será com um alert-->
+          <input type="button" value="Procurar" onclick="listaFuncionarios()">
+        </form>
+        <div class="answer" id="thirdAnswer"></div>
+      </div>
+
+      <code>
+        <pre>
+        </pre>
+      </code>
+    </section>
+
+
     
-    <script src="../scripts/aula09.js"></script>
+    <script src="../scripts/aula10.js"></script>
   </main>
   
   <footer class="main_footer_section">

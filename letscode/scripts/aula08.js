@@ -3,12 +3,12 @@ function getNumber() {
   let getNumber = Number(inputNumber.value);
   let answer = document.getElementById('firstAnswer');
   
-  let result;
+  let result = 'O número digitado obedece a ';
   
   if (getNumber >= 0) {
-    result = `O número digitado obedece a primeira condição do exercício - retorno: ${getNumber}`;
+    result += `1ª condição do exercício - retorno: ${getNumber}`;
   } else {
-    result = `O número digitado obedece a primeira condição do exercício - retorno: ${getNumber * -1}`;
+    result += `2ª condição do exercício - retorno: ${getNumber * -1}`;
   }
 
   return answer.innerHTML = result;
@@ -42,23 +42,21 @@ function animalSound() {
  * Função para converter farenheit em celsius
  * */
 
-function convertToCelsius(farenheit) {
-  if (typeof farenheit !== "number") {
-    return console.log(`farenheit -> ${typeof farenheit}`)
-  } else {
-    const celsius = (farenheit - 32) / 1.8;
-    return celsius;
-  }
-}
+function convertToCelsius() {
+  let farenheit = document.getElementById('farenheit');
+  let answer = document.getElementById('thirdAnswer');
+  let farenheitValue = farenheit.value;
 
-function checkTemperature(value) {
-  const celsius = convertToCelsius(value);
+  const celsius = Math.floor((farenheitValue - 32) / 1.8);
 
-  if (celsius >=20){
-    return console.log('Esta muito quente')
-  } else if (celsius < 10){
-    return console.log('Está muito frio')
+  let result;
+  if (celsius >= 30){
+    result = `${celsius}ºC - Uma praia cai bem agora!`;
+  } else if (celsius < 23){
+    result = `${celsius}ºC - Cuidado com o clima frio, coloque um agasalho.`;
   } else {
-    return console.log('Está morno')
+    result = `${celsius}ºC - Clima gostoso para um passeio ao ar livre.`;
   }
+
+  return answer.innerHTML = result;
 }

@@ -40,6 +40,7 @@
 
   <main>
     <h1>Exercícios de Javascript - Condicionais</h1>
+    <h2>Testando expressões condicionais</h2>
     <section class="firstExample">
       <div class="exercise">
         <p>Crie uma função que recebe um numero.<br>
@@ -62,12 +63,12 @@
       let getNumber = Number(inputNumber.value);
       let answer = document.getElementById('firstAnswer');
       
-      let result;
+      let result = 'O número digitado obedece a ';
       
       if (getNumber >= 0) {
-        result = `O número digitado obedece a primeira condição do exercício - retorno: ${getNumber}`;
+        result += `1ª condição do exercício - retorno: ${getNumber}`;
       } else {
-        result = `O número digitado obedece a primeira condição do exercício - retorno: ${getNumber * -1}`;
+        result += `2ª condição do exercício - retorno: ${getNumber * -1}`;
       }
     
       return answer.innerHTML = result;
@@ -75,7 +76,8 @@
         </pre>
       </code>
     </section>
-  
+
+    <h2>Som dos animais</h2>
     <section class="secondExample">
       <div class="exercise">
         <p>
@@ -124,6 +126,49 @@
         </pre>
       </code>
     </section>
+
+    <h2>Farenheit para Celsius</h2>
+    <section class="thirdExample">
+      <div class="exercise">
+        <p>
+          Crie uma função que faça a conversão de Farenheit para Celsius.<br>
+          Fórmula para converter Farenheit em Celsius: (farenheit - 32) / 1.8
+        </p>
+    
+        <form>
+          <label>
+            Insira a temperatura em Farenheit:
+            <input type="number" name="farenheit" id="farenheit">
+          </label>
+          <input type="button" value="Testar" onclick="convertToCelsius()">
+        </form>
+        <div class="answer" id="thirdAnswer"></div>
+      </div>
+
+      <code>
+        <pre>
+    function convertToCelsius() {
+      let farenheit = document.getElementById('farenheit');
+      let answer = document.getElementById('thirdAnswer');
+      let farenheitValue = farenheit.value;
+    
+      const celsius = Math.floor((farenheitValue - 32) / 1.8);
+    
+      let result;
+      if (celsius >= 30){
+        result = `${celsius}ºC - Uma praia cai bem agora!`;
+      } else if (celsius < 23){
+        result = `${celsius}ºC - Cuidado com o clima frio, coloque um agasalho.`;
+      } else {
+        result = `${celsius}ºC - Clima gostoso para um passeio ao ar livre.`;
+      }
+    
+      return answer.innerHTML = result;
+    }
+        </pre>
+      </code>
+    </section>
+
     <script src="../scripts/aula08.js
     "></script>
   </main>
